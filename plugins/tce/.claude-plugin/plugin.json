@@ -1,6 +1,6 @@
 {
   "name": "tce",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Turn any raw ask or brain dump into a copy-ready Task / Context / Expectations prompt, with NHA guardrails so nothing gets invented, and check an AI's answer against the prompt that produced it.",
   "author": {
     "name": "Ashish Punj",
@@ -8,5 +8,12 @@
   },
   "homepage": "https://github.com/albertpikkop/tce-skill",
   "license": "MIT",
-  "keywords": ["prompting", "tce", "nha", "prompt-engineering", "codex", "claude"]
+  "keywords": [
+    "prompting",
+    "tce",
+    "nha",
+    "prompt-engineering",
+    "codex",
+    "claude"
+  ]
 }

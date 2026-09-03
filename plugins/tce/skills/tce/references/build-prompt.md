@@ -1,6 +1,7 @@
 # The initial build prompt: the long form of TCE
 
-Use this when the ask is a new build, a refactor or a client site, not an everyday ask.
+Use this for a developer's new build, refactor or client site. A non-technical owner's new
+build stays in the short form in SKILL.md; this form asks for things they do not have.
 Same three parts, with the gaps made impossible to miss.
 
 ## The template (copy, fill every [ ], send)
@@ -19,10 +20,10 @@ Build [what], for [who], that does [the one core job].
 - The real data lives here: [CSV / Google Sheet / DB / API path or link. Point at it, do not describe it from memory]
 - Who uses it, on what device: [...]
 - Fixed facts: [stack, hosting, budget, languages, the brand rules as they stand today]
-- Assumptions I am making: [...]
+- Assumptions I am making, not verified: [...]
 
 ## EXPECTATIONS (what "done" looks like)
-- Read the truth files first and follow them. If they conflict with this prompt, they win.
+- Read the truth files first. They win on facts about the business; this prompt wins on the task. If they disagree about the task, stop and ask.
 - If any assumption above is wrong, say so before you start.
 - Exact outputs / screens / endpoints: [...]
 - Output structure it MUST follow (so it cannot drift): [e.g. named sections, an API shape, a file layout]
@@ -37,7 +38,7 @@ Build [what], for [who], that does [the one core job].
 - State every assumption before you act on it.
 - Anything you need but do not have: STOP and mark [PENDING: ...]. Do not stub or guess it.
 - Report every decision you make as you go, in your reply or in a journal file the owner already keeps. Never add a file to someone's repo that they did not ask for.
-- No em-dashes in any user-facing copy.
+- No em-dashes in text you write. Quoted source text stays as it was.
 ```
 
 ## Pre-flight (tick before you send)

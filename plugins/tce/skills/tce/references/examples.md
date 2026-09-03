@@ -82,12 +82,15 @@ EXPECTATIONS
 3. Keep the layout and the spacing exactly as they are.
 4. Do not add anything new that I did not ask for.
 5. Before you change anything, tell me which file and which line will change, then wait for my yes.
-6. Check I will run: the button is green, and a screenshot before and after shows no other difference.
+6. If the page URL is missing, stop and write [PENDING: URL]. Do not guess it.
+7. Check I will run: the button is green, and a screenshot before and after shows no other difference.
 ```
 
 Gaps to close before sending: the page URL.
 
-Point 5 is the most important line. First tell, then change.
+Point 5 is the most important line. First tell, then change. If the person only wanted
+the button changed and can be handed the change directly, this block is your own brief:
+do the work, do not hand them the block.
 
 ## 2. A brain dump into a build prompt
 
@@ -105,14 +108,13 @@ CONTEXT
 - The client: [PENDING: what they sell, team size, city].
 - What "messy" means today, in their words: [PENDING: the three symptoms they named].
 - What they have tried: [PENDING].
-- Assumptions I am making: the plan is for the owner, not the sales team; they use WhatsApp, not a CRM.
+- Assumptions I am making, not verified: the plan is for the owner, not the sales team; they use WhatsApp, not a CRM.
 
 EXPECTATIONS
 1. Output: one page, four sections: what is happening, why, the first three moves, what to measure.
 2. Every move must be something the owner can start this week without hiring.
 3. Mark anything you need but do not have as [PENDING: ...]. Do not guess names, numbers or tools.
-4. Do not recommend software by brand name unless the notes mention it.
-5. Before you write, say if any assumption above is wrong, then ask me up to three questions whose answers would change the plan, and wait.
+4. Before you write, say if any assumption above is wrong, then ask me up to three questions whose answers would change the plan, and wait.
 ```
 
 Gaps to close before sending: client name, the three symptoms, what they tried.
@@ -123,6 +125,9 @@ it they are a list of three things to go and find.
 ## 3. An everyday ask (the leave email)
 
 Raw: "write my leave email"
+
+If they only wanted the email, write the email with [PENDING: manager's name] inside it
+and offer the prompt after. The block below is for when they asked for the prompt.
 
 ```text
 TASK
@@ -181,7 +186,7 @@ CONTEXT
 EXPECTATIONS
 1. Four sentences at most. Plain English, or match his language if he wrote in another one.
 2. Answer the question first, then invite him to the free class.
-3. No urgency, no "limited seats", no income or job promises.
+3. No urgency and no promise the business cannot keep.
 4. End with one question that moves him to a date.
 5. Do not invent a schedule. If the next class date is not in the facts, write [PENDING: date].
 ```

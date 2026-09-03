@@ -99,6 +99,14 @@ it in the Skills panel.
 - When the answer comes back, check it: invented, met or not met per rule, assumed
   without being told. Report first, fix after.
 
+## Tested, not vibes
+
+Every version is run on fictional asks twice, once with the skill and once without, and
+graded by separate agents that did not see it being built. v0.2.0: prompt writing 95% vs
+63%, first contact 91% vs 32%, a Hinglish first message 100% vs 30%, and a developer in a
+repo with AGENTS.md 86% vs 100% (the skill's job there is to stay out of the way; the one
+miss is fixed). The test asks and checks are in `plugins/tce/skills/tce/evals/`.
+
 ## Send your catches back
 
 The skill ends with a catch ledger: every time you correct a prompt it produced, write the

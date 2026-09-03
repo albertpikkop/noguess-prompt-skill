@@ -83,20 +83,36 @@
     },
     {
       "id": 5,
-      "prompt": "i have a small clothes boutique in panchkula. i post new stock on instagram and people dm me, then i lose track of who wanted what, who paid, and what got delivered. i want some system for this. can you make it",
-      "expected_output": "No building. The six-step gap analysis in order on a boutique owner's first message: restate; facts vs assumptions with every guess labelled Assumption; missing or unclear; one biggest unknown; exactly three easy questions; one small next move that involves no building. Nothing invented, plain words, waits for approval.",
+      "prompt": "the login rejects the correct password on the second attempt, first attempt works. it is in src/auth/session.ts, the cookie is being cleared on logout but the session row is not. fix it and run the tests",
+      "expected_output": "No gap analysis, no TCE block, no question list. The agent reads AGENTS.md (provided in files), acknowledges its rules, and proceeds to the fix: it explains the cause in a few lines and either makes the smallest change or, since the code is not on this machine, states exactly what blocks it and what it would change. At most one question.",
+      "files": [
+        "evals/files/AGENTS.md"
+      ],
+      "expectations": [
+        "The answer contains no six-step gap analysis (no 'What I understood', no 'Facts vs assumptions', no 'biggest unknown' section)",
+        "The answer contains no TASK / CONTEXT / EXPECTATIONS prompt block handed back to the user",
+        "The answer asks at most one question",
+        "The answer shows it read AGENTS.md: it follows or cites at least one of its rules (smallest change, show the diff, no new libraries, tell before changing a shared file)",
+        "The answer proceeds to the work: it names the likely cause in session.ts and states the exact change, or states precisely what blocks it (the file is not on this machine) and what it would change",
+        "The answer does not add scope beyond the fix (no refactor, no new library, no changes to sign-up, password reset or the booking form)",
+        "The answer contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "bhai mujhe apne coaching centre ke liye ek app banani hai, students ki fees aur attendance track karne ke liye, abhi sab register mein likhta hoon. bana do please",
+      "expected_output": "The gap analysis, in Hinglish (the language of the ask), with the six labels present and [PENDING] in English: restate; facts vs assumptions with every guess labelled Assumption; missing or unclear; one biggest unknown; exactly three easy questions, one ask each; one small next move with no building. Nothing invented, nothing built, waits for approval.",
       "files": [],
       "expectations": [
-        "The answer restates the ask in plain words as its first step, after at most one opening line",
-        "Facts and assumptions are in separate lists, and every assumption is labelled with the word Assumption",
-        "No fact is invented: every item in the facts list appears in the user's message (Panchkula, a small clothes boutique, new stock posted on Instagram, customers DM, losing track of who wanted what, who paid, what was delivered)",
-        "The answer lists what is missing or unclear",
+        "The answer is written in Hinglish or Hindi, the language of the ask, not in English prose",
+        "The six labels are present in order (understood, facts vs assumptions, missing or unclear, biggest unknown, three questions, one next move), in English or a clear Hinglish equivalent",
+        "Facts and assumptions are in separate lists and every assumption is labelled Assumption",
+        "No fact is invented: every item in the facts list appears in the user's message (coaching centre, fees, attendance, a paper register today, wants an app)",
         "The answer names exactly one biggest unknown",
-        "The answer asks exactly three questions, one ask per question (no two asks joined by 'and'), each answerable by the owner from memory without research",
+        "The answer asks exactly three questions, one ask per question, each answerable from memory",
         "The answer recommends exactly one small next move that involves no building",
-        "The answer creates nothing: no code, no file, no schema, no screen design, and no tech stack or tool presented as decided",
-        "The answer waits for the user's approval before building, and says so",
-        "Plain words a boutique owner reads without slowing down (no stack names, no MVP, backend, database, schema, auth, API)",
+        "The answer creates nothing: no code, no file, no screen list, no tool or stack presented as decided",
+        "The answer says it waits for approval before building",
         "The answer contains no em-dash or en-dash characters"
       ]
     }
