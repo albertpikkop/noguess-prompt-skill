@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.2.0, 3 September 2026
+## v0.3.0, 3 September 2026
 
 - Renamed to `noguess`. The repo, plugin, skill and command are `noguess`; `/tce` stays as an alias.
 - The method inside is unchanged: TCE + NHA, four moves, stage rules.
