@@ -106,6 +106,16 @@ rule there. If a rule made your agent better, send it back as an issue or a pull
 this repo. The good ones go into the next version with your name on it. Versions are
 tagged; `claude plugin marketplace update ashishpunj` pulls the latest.
 
+## Upgrading (for the maintainer)
+
+Edit the files under `plugins/tce/skills/tce/`, add a section to `CHANGELOG.md`, then:
+
+```bash
+scripts/release.sh 0.2.0 "one line on what changed"
+```
+
+That bumps the version, packages `dist/tce.skill`, commits, tags and publishes the release.
+
 ## Credit
 
 The three-part shape, Task + Context + Expectation, is from OpenAI's ChatGPT Foundations
