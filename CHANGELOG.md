@@ -2,6 +2,12 @@
 
 ## v0.2.0, 3 September 2026
 
+- Renamed to `noguess`. The repo, plugin, skill and command are `noguess`; `/tce` stays as an alias.
+- The method inside is unchanged: TCE + NHA, four moves, stage rules.
+- Promise line and topics on the repo, so strangers can find it.
+
+## v0.2.0, 3 September 2026
+
 Rewritten after a cold review by a separate agent that had not seen the skill being built.
 
 - Stand-down rules, in the description and the body: a repo that already has a truth file,

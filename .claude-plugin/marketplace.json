@@ -1,22 +1,22 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ashishpunj",
-  "description": "Skills by Ashish Punj: the TCE prompting method with NHA guardrails.",
+  "description": "Skills by Ashish Punj. noguess: make your AI stop guessing (the TCE + NHA method).",
   "owner": {
     "name": "Ashish Punj",
     "url": "https://ashishpunj.com"
   },
   "plugins": [
     {
-      "name": "tce",
-      "description": "Turn any raw ask or brain dump into a copy-ready Task / Context / Expectations prompt, with NHA guardrails so nothing gets invented, and check an AI's answer against the prompt that produced it.",
+      "name": "noguess",
+      "description": "noguess. Make your AI stop guessing. 95% vs 63% in blind tests. The TCE + NHA method as a skill.",
       "author": {
         "name": "Ashish Punj",
         "url": "https://ashishpunj.com"
       },
-      "source": "./plugins/tce",
+      "source": "./plugins/noguess",
       "category": "productivity",
-      "homepage": "https://github.com/albertpikkop/tce-skill"
+      "homepage": "https://github.com/albertpikkop/noguess"
     }
   ]
 }

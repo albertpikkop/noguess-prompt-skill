@@ -1,7 +1,7 @@
-# tce
+# noguess
 
-**The shape of what you ask the machine.** A skill for Claude Code, Codex, Cursor and
-any agent that reads `SKILL.md`. It turns a raw ask or a brain dump into a copy-ready
+**Make your AI stop guessing.** 95% vs 63% in blind tests. A skill for Claude Code, Codex, Cursor and
+any agent that reads `SKILL.md`. The method inside is TCE + NHA; students say "TCE this", the command is `noguess`, and `/tce` still works as an alias. It turns a raw ask or a brain dump into a copy-ready
 prompt with three parts, Task, Context, Expectations, and marks every gap `[PENDING]`
 instead of letting the AI guess. Then it checks the answer against the prompt that
 produced it.
@@ -51,31 +51,31 @@ sounds intelligent and assumes half the project.
 
 ## Install
 
-**Claude Code** (two commands, then say "TCE this" in any project):
+**Claude Code** (two commands, then say "noguess this" or "TCE this" in any project):
 
 ```bash
-claude plugin marketplace add albertpikkop/tce-skill
+claude plugin marketplace add albertpikkop/noguess
 ```
 
 ```bash
-claude plugin install tce@ashishpunj
+claude plugin install noguess@ashishpunj
 ```
 
 **Any agent, from GitHub** (Claude Code, Codex, Cursor and others, using the open
 `skills` tool):
 
 ```bash
-npx skills add albertpikkop/tce-skill
+npx skills add albertpikkop/noguess
 ```
 
-**Codex, by hand:** copy `plugins/tce/skills/tce` into `~/.codex/skills/tce`.
+**Codex, by hand:** copy `plugins/noguess/skills/noguess` into `~/.codex/skills/noguess`.
 
-**Claude app and claude.ai:** download `dist/tce.skill` from the latest release and add
+**Claude app and claude.ai:** download `dist/noguess.skill` from the latest release and add
 it in the Skills panel.
 
 ## What is in the skill
 
-- `SKILL.md`: the method. The three parts, the sorting rule (T and E are orders, C is
+- `SKILL.md`: the method (the `tce/` folder beside it is only the alias). The three parts, the sorting rule (T and E are orders, C is
   facts only), the procedure, the output shape, the check that closes the loop, the NHA
   structure (notes, facts, files) for messy input, the five context problems, and a
   catch ledger for your own corrections.
@@ -105,7 +105,7 @@ Every version is run on fictional asks twice, once with the skill and once witho
 graded by separate agents that did not see it being built. v0.2.0: prompt writing 95% vs
 63%, first contact 91% vs 32%, a Hinglish first message 100% vs 30%, and a developer in a
 repo with AGENTS.md 86% vs 100% (the skill's job there is to stay out of the way; the one
-miss is fixed). The test asks and checks are in `plugins/tce/skills/tce/evals/`.
+miss is fixed). The test asks and checks are in `plugins/noguess/skills/noguess/evals/`.
 
 ## Send your catches back
 
@@ -116,13 +116,23 @@ tagged; `claude plugin marketplace update ashishpunj` pulls the latest.
 
 ## Upgrading (for the maintainer)
 
-Edit the files under `plugins/tce/skills/tce/`, add a section to `CHANGELOG.md`, then:
+Edit the files under `plugins/noguess/skills/noguess/`, add a section to `CHANGELOG.md`, then:
 
 ```bash
 scripts/release.sh 0.2.0 "one line on what changed"
 ```
 
-That bumps the version, packages `dist/tce.skill`, commits, tags and publishes the release.
+That bumps the version, packages `dist/noguess.skill`, commits, tags and publishes the release.
+
+## The numbers
+
+Three rounds of fictional asks, each run with the skill and without, graded by separate agents
+that never saw the skill: 88% vs 54%, then 95% vs 63% on the public version, then 91% vs 32%
+on a person's first message about a project. The test asks and checks are in `evals/`.
+
+## Renamed
+
+First published as `tce-skill`. That name redirects here; old install lines keep working.
 
 ## Credit
 

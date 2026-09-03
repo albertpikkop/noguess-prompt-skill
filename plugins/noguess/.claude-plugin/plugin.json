@@ -1,0 +1,22 @@
+{
+  "name": "noguess",
+  "version": "0.2.0",
+  "description": "noguess. Make your AI stop guessing. 95% vs 63% in blind tests. The TCE + NHA method as a skill: a copy-ready Task / Context / Expectations prompt from any messy ask, the gap analysis at first contact, and the check that closes the loop.",
+  "author": {
+    "name": "Ashish Punj",
+    "url": "https://ashishpunj.com"
+  },
+  "homepage": "https://github.com/albertpikkop/noguess",
+  "license": "MIT",
+  "keywords": [
+    "noguess",
+    "prompting",
+    "tce",
+    "nha",
+    "prompt-engineering",
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "cursor"
+  ]
+}

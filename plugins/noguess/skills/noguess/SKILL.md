@@ -1,5 +1,5 @@
 ---
-name: tce
+name: noguess
 description: >-
   The TCE + NHA method: turn a raw ask or brain dump into a Task / Context /
   Expectations prompt where nothing is invented, run a gap analysis before building for
@@ -14,7 +14,9 @@ description: >-
   then just do the work.
 ---
 
-# TCE: the shape of what you ask the machine
+# noguess: the shape of what you ask the machine
+
+The method inside is TCE + NHA. Students say "TCE this"; the command is `noguess`.
 
 A prompt does not need to be right the first time. It needs to make every gap visible.
 Visible gaps are cheap to close. Hidden guesses cost a single builder a week. TCE (Task,
