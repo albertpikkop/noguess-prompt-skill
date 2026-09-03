@@ -1,0 +1,104 @@
+{
+  "skill_name": "tce",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "ok so for my client's sweet shop we need a page for the diwali gift boxes. 3 box sizes, the client will give the prices later. the photos are in the drive folder diwali-2026, same look as their site, has to work on phone, whatsapp order button same number as the site. dont touch the home page. write me the prompt for codex",
+      "expected_output": "One copy-ready TCE block: a one-sentence Task; a Context of facts only that names the Drive folder and the existing site and marks the prices as [PENDING] instead of inventing them; Expectations that pin the output shape, list non-coder checks, carry the do-not lines (home page untouched, nothing new that was not asked), the [PENDING] instruction for the machine and the tell-before-change line. At most three questions, no preamble, no em-dashes, no sections or features the user did not ask for.",
+      "files": [],
+      "expectations": [
+        "The answer contains three labelled sections in this order: Task, Context, Expectations",
+        "The Task section is exactly one sentence",
+        "The prices are marked as pending/unknown (e.g. [PENDING]) and no made-up price appears anywhere (a currency symbol inside a prohibition does not count)",
+        "The Context section contains no instructions to the AI (every line is a fact, a file, a link or a labelled assumption; no read/build/keep/do-not lines)",
+        "The Expectations section contains an explicit do-not line that the home page must not be changed",
+        "The Expectations section tells the AI to mark missing information as [PENDING] (or equivalent) instead of guessing",
+        "The Context section names the Drive folder diwali-2026 and the existing site as sources, and the WhatsApp number is taken from the site or marked pending, not invented",
+        "The Expectations section includes at least one check a non-coder could run (e.g. the page opens on a phone, the button opens WhatsApp)",
+        "The Expectations section includes the tell-before-change line: report which files or lines will change before changing anything",
+        "The prompt adds no page section, feature or deliverable the user did not ask for (no FAQ, no bulk or corporate block, no delivery block, no email signup)",
+        "The answer asks at most three questions",
+        "The answer contains no em-dash or en-dash characters",
+        "The prompt is delivered as one copyable block with no preamble explaining the method"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "our menu page is live, people order from it every day. the paneer thali price shows 220 but it is 250 now. only that. last time i asked the AI to fix one price and it 'improved' the whole page and moved the photos around. what do i type this time?",
+      "expected_output": "A short TCE the owner can paste: Task is the single job (change the paneer thali price from 220 to 250 and nothing else); Context carries only facts (page live, orders daily, the price shows 220 today, the layout and photos are already correct); Expectations carry the do-not lines for layout, photos and every other price, 'nothing new I did not ask for', the tell-before-change line, and one check the owner can run. Fits on one screen, plain words, no jargon, no invented values.",
+      "files": [],
+      "expectations": [
+        "The answer gives the owner one copyable prompt with labelled Task, Context, Expectations sections",
+        "The Task is a single job: change the paneer thali price from 220 to 250, nothing else",
+        "Expectations include explicit do-not lines covering the layout and the photos",
+        "Expectations include a do-not line that no other price or item changes",
+        "Expectations include 'do not add anything new that I did not ask for' or an equivalent scope lock",
+        "Expectations include the tell-before-change line: name which file and which line will change before changing anything, then wait",
+        "Context contains only facts (page is live, orders daily, price shows 220 today, layout and photos already correct) and no orders to the AI",
+        "Expectations include at least one check the owner can run without code (e.g. open the page on a phone, the thali shows 250, everything else looks the same as a before screenshot)",
+        "The answer invents no value the user did not give (no other prices, no colour codes, no file names, no page URL stated as fact; unknowns are marked pending or asked)",
+        "The whole answer fits on one screen: the prompt block is at most 22 lines and the total answer under 40 lines",
+        "No technical jargon a shop owner would not know (no CSS, dependency, refactor, DOM, selector, stylesheet, diff, git)",
+        "The answer contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "i asked codex for the whatsapp reminder text and this is what it gave me:\n\nHi Rohit! 🎉 Reminder: your free AI class is tomorrow at 10 AM at SCO 34, Sector 33D, Chandigarh. Limited seats, so come 15 minutes early and bring your laptop. See you there! 🙌\n\nmy spec was: a reminder sent 24 hours before the class. must have the student's name, the class time and the address. under 3 lines. no emoji. never say limited seats or anything like that. the facts i gave: Rohit, Saturday 10 AM, SCO 34 Sector 33D Chandigarh. did it make anything up? check it",
+      "expected_output": "The check, in order: (1) invented, not supported by spec or facts: 'come 15 minutes early', 'bring your laptop', 'free' and 'AI class' which were not in the facts, and the swap of the given fact 'Saturday' for 'tomorrow'; (2) every spec rule with a verdict: name met, time met or partly met, address met, under 3 lines with a verdict, no emoji NOT met (two emoji), no 'limited seats' NOT met, the 24-hour timing pending; (3) assumptions made without being told; (4) one line naming why; (5) a corrected text, written with [PENDING] markers where facts are missing, that itself passes the spec.",
+      "files": [],
+      "expectations": [
+        "The answer flags 'come 15 minutes early' as not supported by the spec or the facts",
+        "The answer flags 'bring your laptop' as not supported by the spec or the facts",
+        "The answer flags the word 'free' as not among the facts the user gave",
+        "The answer flags the swap of the given fact 'Saturday' for 'tomorrow' (a fact replaced by a computed one)",
+        "The answer marks 'no emoji' as NOT met and identifies both emoji",
+        "The answer marks the 'never say limited seats' rule as NOT met",
+        "The answer marks name and address as met, matching the facts given",
+        "Every spec rule gets an explicit verdict (met / not met / pending), including the under-3-lines rule and the 24-hours-before rule",
+        "The answer lists assumptions the AI made without being told",
+        "The answer reports first and then offers a corrected reminder text as a separate step, not silently substituted for the report",
+        "The corrected reminder itself passes the spec: no emoji, no 'limited seats' or similar push, keeps 'Saturday', within 3 lines, and marks any fact it does not have as [PENDING] rather than guessing",
+        "The answer contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "hi i run a tuition centre in mohali, 40 students, they pay monthly in cash, i keep attendance in a register. i want an app where parents get a whatsapp reminder for fees and i can mark attendance on my phone. can you build it for me",
+      "expected_output": "No building. The six-step gap analysis in order: restate; facts vs assumptions with every guess labelled Assumption; missing or unclear; one biggest unknown; exactly three easy questions; one small next move. Nothing invented, plain words, and it waits for approval before creating anything.",
+      "files": [],
+      "expectations": [
+        "The answer restates the ask in plain words as its first step, after at most one opening line",
+        "Facts and assumptions are in separate lists, and every assumption is labelled with the word Assumption",
+        "No fact is invented: every item in the facts list appears in the user's message (Mohali, 40 students, monthly cash, a paper register, WhatsApp fee reminders to parents, attendance on the phone)",
+        "The answer lists what is missing or unclear",
+        "The answer names exactly one biggest unknown",
+        "The answer asks exactly three questions, one ask per question (no two asks joined by 'and'), each answerable by the owner from memory without research",
+        "The answer recommends exactly one small next move that involves no building",
+        "The answer creates nothing: no code, no file, no schema, no screen design, and no tech stack or tool presented as decided",
+        "The answer waits for the user's approval before building, and says so",
+        "Plain words a tuition-centre owner reads without slowing down (no stack names, no MVP, backend, database, schema, auth, API)",
+        "The answer contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "i have a small clothes boutique in panchkula. i post new stock on instagram and people dm me, then i lose track of who wanted what, who paid, and what got delivered. i want some system for this. can you make it",
+      "expected_output": "No building. The six-step gap analysis in order on a boutique owner's first message: restate; facts vs assumptions with every guess labelled Assumption; missing or unclear; one biggest unknown; exactly three easy questions; one small next move that involves no building. Nothing invented, plain words, waits for approval.",
+      "files": [],
+      "expectations": [
+        "The answer restates the ask in plain words as its first step, after at most one opening line",
+        "Facts and assumptions are in separate lists, and every assumption is labelled with the word Assumption",
+        "No fact is invented: every item in the facts list appears in the user's message (Panchkula, a small clothes boutique, new stock posted on Instagram, customers DM, losing track of who wanted what, who paid, what was delivered)",
+        "The answer lists what is missing or unclear",
+        "The answer names exactly one biggest unknown",
+        "The answer asks exactly three questions, one ask per question (no two asks joined by 'and'), each answerable by the owner from memory without research",
+        "The answer recommends exactly one small next move that involves no building",
+        "The answer creates nothing: no code, no file, no schema, no screen design, and no tech stack or tool presented as decided",
+        "The answer waits for the user's approval before building, and says so",
+        "Plain words a boutique owner reads without slowing down (no stack names, no MVP, backend, database, schema, auth, API)",
+        "The answer contains no em-dash or en-dash characters"
+      ]
+    }
+  ]
+}
