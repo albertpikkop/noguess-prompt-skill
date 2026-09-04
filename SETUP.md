@@ -1,7 +1,8 @@
 # Day one: setting up a student's machine
 
-Three skills, one method. `noguess` (the TCE + NHA method), `build-first-crm` (a first CRM from
-the business truth), `remotion-ffmpeg-video` (a first video). Do these steps once, in order.
+Four skills, one method. `noguess` (the TCE + NHA method), `business-blueprint` (the plan in
+three versions), `build-first-crm` (a first CRM from the business truth),
+`remotion-ffmpeg-video` (a first video). Do these steps once, in order.
 
 ## Everyone
 
@@ -33,6 +34,10 @@ claude plugin marketplace add albertpikkop/noguess-prompt-skill
 
 ```bash
 claude plugin install noguess@ashishpunj
+```
+
+```bash
+claude plugin install business-blueprint@ashishpunj
 ```
 
 ```bash
@@ -100,7 +105,8 @@ live with `claude plugin details build-first-crm@ashishpunj`.
 
 ## The check that it worked
 
-In the agent, inside the business folder, type: `TCE this: I want an enquiry page for my
+In the agent, inside the business folder, type: `help me plan my business`. The reply must be
+the ten questions and nothing written yet. Then type: `TCE this: I want an enquiry page for my
 salon`. The reply must be the six steps (what it understood, facts vs assumptions, missing,
 biggest unknown, three questions, one small move) and nothing built. Answer the three
 questions, or say `skip`. It shows you `BUSINESS-TRUTH.md`; say `yes` to that. Then type

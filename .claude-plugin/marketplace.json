@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ashishpunj",
-  "description": "Skills by Ashish Punj: the student kit. noguess (the TCE + NHA method), build-first-crm (a first CRM from a business truth), remotion-ffmpeg-video (a first video). One marketplace, three installs.",
+  "description": "Skills by Ashish Punj: the student kit. noguess (the TCE + NHA method), business-blueprint (the plan, in three versions), build-first-crm (a first CRM from a business truth), remotion-ffmpeg-video (a first video). One marketplace, four installs.",
   "owner": {
     "name": "Ashish Punj",
     "url": "https://ashishpunj.com"
@@ -15,6 +15,17 @@
         "url": "https://ashishpunj.com"
       },
       "source": "./plugins/noguess",
+      "category": "productivity",
+      "homepage": "https://github.com/albertpikkop/noguess-prompt-skill"
+    },
+    {
+      "name": "business-blueprint",
+      "description": "Your business plan in three versions: ten plain questions make v0, a ruthless gap attack makes v1, real answers from real strangers make v2, the Blueprint. Nothing invented.",
+      "author": {
+        "name": "Ashish Punj",
+        "url": "https://ashishpunj.com"
+      },
+      "source": "./plugins/business-blueprint",
       "category": "productivity",
       "homepage": "https://github.com/albertpikkop/noguess-prompt-skill"
     },

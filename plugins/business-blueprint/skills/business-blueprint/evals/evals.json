@@ -1,0 +1,99 @@
+{
+  "skill_name": "business-blueprint",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to start a business helping small businesses with AI. Can you make me a business plan?",
+      "files": [],
+      "expected_output": "Shows all ten questions as a list and asks the person to answer in their own words, from memory, with guessing allowed if labelled. Writes no plan file yet. Invents no customer, price, market size or competitor. Names that 'small businesses' is a category and asks for one person who could be phoned this week, but does not answer it for them.",
+      "expectations": [
+        "The reply shows the ten questions as a list before writing anything",
+        "The reply writes no plan file and creates nothing yet",
+        "The reply invents no customer, price, number, market size or competitor",
+        "The reply says the person may guess as long as the guess is labelled, and that 'I do not know' is a real answer",
+        "The reply does not run the attack or produce scores at this stage",
+        "The reply contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Here are my answers. 1. I want to help salon owners stop losing bookings. 2. Salon owners. 3. Not sure. 4. They miss calls when they are cutting hair. 5. A WhatsApp number that books for them. 6. No idea yet. 7. I work evenings only. 8. Maybe 20000 rupees. 9. My cousin has a salon and she says it happens. 10. Whether they would pay.",
+      "files": [],
+      "expected_output": "Writes PLAN-v0.md from exactly these answers. 'Salon owners' is kept as given and flagged as a category, not a person, and question 3 and 6 stay [PENDING]. The cousin is kept as evidence but labelled: one person, and family. Nothing is added. Then offers the attack and waits for a yes.",
+      "expectations": [
+        "The reply writes v0 using only the person's own answers, keeping their numbers and words",
+        "Questions 3 and 6 are marked [PENDING] rather than filled in with a guess",
+        "The cousin is recorded as evidence but labelled as one person and as family, not treated as proof",
+        "The reply marks 'salon owners' as a category rather than a person who could be contacted",
+        "The reply offers the attack and waits for a yes before running it",
+        "The reply does not invent a price, a location, a market size or a competitor",
+        "The reply contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "yes attack it, be ruthless, dont sugarcoat",
+      "files": [
+        "evals/files/PLAN-v0.md"
+      ],
+      "expected_output": "Ten areas, each with a score out of ten, a named gap, a size and one lift. Nothing supported only by an Assumption scores above 7, so evidence scores low. Then the two that matter most, and three questions answerable from memory. No rewrite of the plan, no encouragement sandwich, no verdict that the idea is bad.",
+      "expectations": [
+        "Every area carries a score, a named gap, a size and one lift the person could do themselves",
+        "No area supported only by an assumption is scored above 7, and the evidence area scores low",
+        "The reply ranks the two gaps that matter most instead of listing ten equal problems",
+        "The reply ends with three questions the person could answer from memory or one phone call",
+        "The reply does not rewrite the plan, does not open with praise, and does not tell the person the idea is bad",
+        "The reply invents no competitor, statistic or market size to argue with",
+        "The reply contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "ok now make my v2 blueprint, i showed the plan to my sister and two friends and they all loved it",
+      "files": [
+        "evals/files/PLAN-v0.md"
+      ],
+      "expected_output": "Refuses to write v2, in plain words and without lecturing: three responses, all friends or family, is not the bar. Names the bar (ten relevant responses from people who are not friends or family) and why friends answer kindly. Offers to write the seven survey questions instead, or to write v1 if the attack has not run.",
+      "expectations": [
+        "The reply does not write a v2 or Blueprint file",
+        "The reply names the bar plainly: ten relevant responses from people who are not friends or family",
+        "The reply explains in one or two lines why friends and family answers do not settle anything",
+        "The reply offers the next real step (the seven survey questions, or v1 first) rather than only refusing",
+        "The reply does not lecture or moralise at the person",
+        "The reply contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "write me the survey questions",
+      "files": [
+        "evals/files/PLAN-v1.md"
+      ],
+      "expected_output": "Seven questions, six short and one open paragraph, each with a line saying which Assumption or [PENDING] from v1 it settles. Questions ask what people did, not what they would do, and none names or describes the product. Says the agent will not create the Form or send it, and gives the two steps plus the reminder not to send it to their own contacts.",
+      "expectations": [
+        "Exactly seven questions, six short and one open paragraph question",
+        "Each question is followed by what it settles from the person's own v1",
+        "The questions ask about past behaviour, not about whether someone would use or like a future product",
+        "No question teaches its own answer or describes the product",
+        "The reply says the agent does not create the Form or collect responses, and gives the two steps",
+        "The reply warns against sending it only to friends or their own contact list",
+        "The reply contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "build me a landing page and a crm for this",
+      "files": [
+        "evals/files/PLAN-v1.md"
+      ],
+      "expected_output": "Stands down from planning: a plan already exists, so it does not ask the ten questions again. Says in one line that v1 is not evidence-backed yet and what that risks, writes or updates BUSINESS-TRUTH.md so the building skill can read it, and hands over to the building skill by name rather than building anything itself.",
+      "expectations": [
+        "The reply does not ask the ten questions again",
+        "The reply does not build a page, a database or a CRM itself",
+        "The reply hands over to the building skill and names the file it reads (BUSINESS-TRUTH.md)",
+        "The reply notes in one line that v1 has not met real people yet, without refusing to continue",
+        "The reply contains no em-dash or en-dash characters"
+      ]
+    }
+  ]
+}
