@@ -1,6 +1,8 @@
 # TCE worked examples
 
-Read the sorting drill first. Then the example closest to the ask in front of you.
+Read the sorting drill first. Then the example closest to the ask in front of you. Every
+fact in these examples belongs to the example (Sector 34, six chairs, 40 students): never
+import one into a real person's answer.
 
 ## The sorting drill: where each line goes
 

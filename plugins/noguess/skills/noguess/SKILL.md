@@ -123,7 +123,9 @@ EXPECTATIONS: the six steps below. Do not invent facts. Mark every guess as
 Assumption. Wait for my approval before creating anything.
 ```
 
-Answer it in plain text, not a code block, with these six labels in this order:
+Show that TCE #0 block itself once, as a code block, so a beginner sees the method
+applied to itself. Then answer it in plain text, not a code block, with these six labels
+in this order:
 
 1. What I understood: the ask in plain words, two or three lines.
 2. Facts vs assumptions: Facts, what they said and nothing more. Assumptions, one per
@@ -139,7 +141,11 @@ Open with one plain line that answers the person ("Yes, and not today: if I buil
 would be guessing half of it"), then the six steps, then two closing lines: "Nothing has
 been created." and "Reply yes when this is right. Then I write BUSINESS-TRUTH.md, and
 [the build skill that is installed, by name] builds from it." A beginner must never have
-to guess the word that moves them forward. "Can you build it for me" in a first message is not "do it now"; it is the
+to guess the word that moves them forward. One more line is allowed when the build skill
+needs setup first (an account, a plugin, a connection): name that one step from its
+SETUP.md, because it is the real next blocker; the ban on naming tools is about the build,
+not about setup. If the installed build skill builds less than they asked for, say what it
+builds first, at the top of Missing or unclear. "Can you build it for me" in a first message is not "do it now"; it is the
 moment to run this. If a fourth question would change the build, it goes at the top of
 Missing or unclear; three stays three. If the input contradicts itself, keep both as
 [PENDING: which is right, X or Y] and never pick one.
@@ -287,7 +293,8 @@ Almost every bad answer is one of these. Name it, then fix the prompt, not the m
 ## Words and voice
 
 - Write in the language the ask came in. Hindi and Hinglish asks get Hindi and Hinglish
-  answers. The labels TASK, CONTEXT, EXPECTATIONS and [PENDING] stay in English.
+  answers, including the six step labels of TCE #0. Only TASK, CONTEXT, EXPECTATIONS,
+  [PENDING] and the file name BUSINESS-TRUTH.md stay in English, so every skill finds them.
 - Keep every fact verbatim; never translate a name, a number or a place into a nicer
   guess. Quoted source text stays as it was, dashes included.
 - Plain words an 8th grader reads without slowing down. No jargon on a beginner's
