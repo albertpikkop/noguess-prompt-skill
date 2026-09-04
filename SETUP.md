@@ -77,6 +77,22 @@ npx skills add albertpikkop/remotion-ffmpeg-video-skill
   `winget install Python.Python.3.12`, then check `py -3 --version`.
 - The skill scaffolds the Remotion project itself and asks before installing anything.
 
+## Updating later
+
+The marketplace command refreshes the list, but a plugin that lives in its own repo is only
+replaced by a clean reinstall. To move all three to the newest version:
+
+```bash
+claude plugin marketplace update ashishpunj
+```
+
+```bash
+claude plugin uninstall build-first-crm && claude plugin install build-first-crm@ashishpunj
+```
+
+The same two words, uninstall then install, for `remotion-ffmpeg-video`. Check which version is
+live with `claude plugin details build-first-crm@ashishpunj`.
+
 ## The check that it worked
 
 In the agent, inside the business folder, type: `TCE this: I want an enquiry page for my
