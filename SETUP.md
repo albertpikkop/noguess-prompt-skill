@@ -9,12 +9,15 @@ the business truth), `remotion-ffmpeg-video` (a first video). Do these steps onc
    Check in a terminal: `node -v`.
 2. **A Supabase account** at supabase.com, free plan. One project per student. Never put two
    students' customers in one project.
-3. **An email you control** (it becomes the operator login) and a **password manager** (you
-   will set the operator password yourself and keep it there).
+3. **An email you control** (it becomes the operator login) and a **password manager**. The
+   CRM skill gives you a temporary password in the chat; change it after your first login.
 4. **A free static host account**, Cloudflare Pages is fine (pages.cloudflare.com), for the
    page the CRM skill builds. Codex students who enable Sites can skip this.
 5. **One folder for the business.** Make it, open the agent inside it, and keep using it.
    `BUSINESS-TRUTH.md`, the file all three skills share, lives there.
+6. **Optional, for the two emails on each enquiry**: a free Resend account (resend.com). To
+   email your customers rather than only yourself, you also need a domain you own and verify
+   in Resend; until then the skill sends only the operator email and says so.
 
 On a fresh Mac, `brew` (brew.sh) comes first; the FFmpeg step needs it, and the first
 `python3` command may ask to install Apple's command line tools: say yes.
