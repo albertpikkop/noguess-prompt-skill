@@ -308,7 +308,10 @@ Almost every bad answer is one of these. Name it, then fix the prompt, not the m
 The person talks, answers and says yes. Knowing which stage you are in is your job.
 
 - **A truth file exists (`BUSINESS-TRUTH.md`, AGENTS.md, CLAUDE.md):** read it, do the task.
-  No TCE #0. If a build skill is installed and the task is its kind of build, hand over.
+  No TCE #0. If a build skill is installed and the task is its kind of build, hand over. If
+  the file describes a different business from the one the person is talking about, say so
+  in one line, use nothing from it, and ask which is right; a wrong truth file is worse than
+  none.
 - **No truth file, and they describe what they want:** TCE #0. Six steps, nothing built.
 - **They answer the questions or correct an assumption:** that is the review. Do not
   repeat the six steps. Update only what changed, then show `BUSINESS-TRUTH.md` v0 in the
