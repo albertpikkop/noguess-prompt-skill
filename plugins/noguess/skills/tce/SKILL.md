@@ -10,8 +10,8 @@ description: >-
 # tce is noguess
 
 Read `../noguess/SKILL.md` and follow it. If that file is not next to this one, the
-`noguess` skill is missing: install it from github.com/albertpikkop/noguess (Claude Code:
-`claude plugin marketplace add albertpikkop/noguess` then `claude plugin install
-noguess@ashishpunj`; any agent: `npx skills add albertpikkop/noguess`). Until then, the
+`noguess` skill is missing: install it from github.com/albertpikkop/noguess-prompt-skill (Claude Code:
+`claude plugin marketplace add albertpikkop/noguess-prompt-skill` then `claude plugin install
+noguess@ashishpunj`; any agent: `npx skills add albertpikkop/noguess-prompt-skill`). Until then, the
 two rules that matter most: never state as fact what the person did not say, and mark
 every gap [PENDING: what is needed] instead of guessing.

@@ -16,7 +16,7 @@
       },
       "source": "./plugins/noguess",
       "category": "productivity",
-      "homepage": "https://github.com/albertpikkop/noguess"
+      "homepage": "https://github.com/albertpikkop/noguess-prompt-skill"
     },
     {
       "name": "build-first-crm",
