@@ -20,7 +20,7 @@
     },
     {
       "name": "build-first-crm",
-      "description": "Build a first CRM from BUSINESS-TRUTH.md: landing page, enquiry form, Supabase storage, operator login. Codex with Sites, or any agent with a static page. Asks before every account, cost or deploy.",
+      "description": "Build a first CRM from BUSINESS-TRUTH.md, Supabase first and proven before any page: project, tables with RLS, an operator login proven by a real sign-in, then the landing page and enquiry form, then the two emails through Resend. One script creates everything inside Supabase from one access token and debugs the login, the button and the email.",
       "author": {
         "name": "Ashish Punj",
         "url": "https://ashishpunj.com"
