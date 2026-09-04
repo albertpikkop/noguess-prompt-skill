@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ashishpunj",
-  "description": "Skills by Ashish Punj. noguess: make your AI stop guessing (the TCE + NHA method).",
+  "description": "Skills by Ashish Punj: the student kit. noguess (the TCE + NHA method), build-first-crm (a first CRM from a business truth), remotion-ffmpeg-video (a first video). One marketplace, three installs.",
   "owner": {
     "name": "Ashish Punj",
     "url": "https://ashishpunj.com"
@@ -17,6 +17,34 @@
       "source": "./plugins/noguess",
       "category": "productivity",
       "homepage": "https://github.com/albertpikkop/noguess"
+    },
+    {
+      "name": "build-first-crm",
+      "description": "Build a first CRM from BUSINESS-TRUTH.md: landing page, enquiry form, Supabase storage, operator login. Codex with Sites, or any agent with a static page. Asks before every account, cost or deploy.",
+      "author": {
+        "name": "Ashish Punj",
+        "url": "https://ashishpunj.com"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/albertpikkop/first-crm-skill.git"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/albertpikkop/first-crm-skill"
+    },
+    {
+      "name": "remotion-ffmpeg-video",
+      "description": "Make and verify a first programmatic video with Remotion and FFmpeg: preflight, a beginner default contract, a verified render, and the noguess check at the end.",
+      "author": {
+        "name": "Ashish Punj",
+        "url": "https://ashishpunj.com"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/albertpikkop/remotion-ffmpeg-video-skill.git"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/albertpikkop/remotion-ffmpeg-video-skill"
     }
   ]
 }

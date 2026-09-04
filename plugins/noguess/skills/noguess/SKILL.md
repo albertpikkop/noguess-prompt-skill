@@ -6,7 +6,7 @@ description: >-
   a beginner, and check an AI's answer against the prompt that produced it. Use when the
   user asks for a prompt or a brief for Codex, Claude, ChatGPT or Cursor ("TCE this",
   "write the prompt for", "prompt likho"), when they describe something they want built
-  and no truth file (AGENTS.md, CLAUDE.md, a project doc) exists yet ("can you build it
+  and no truth file (BUSINESS-TRUTH.md, AGENTS.md, CLAUDE.md) exists yet ("can you build it
   for me", "mujhe app banani hai"), or when they paste an AI's answer and ask whether it
   made anything up ("check this", "ye sahi hai kya"). Stand down when the repo already
   has a truth file, when the ask names a file and a fix, when it is one small reversible
@@ -74,28 +74,39 @@ and a rebuilt layout.
 
 ## Two levels, never mixed: the task and the truth file
 
-A TCE is for one task. The business lives in a truth file, written once: who the
-business is, what exists, the rules that never change. Each task's Context names that
-file; each task's Expectations says to read it first. A prompt that re-explains the
-business is a truth file that was never written. For a person with only a phone, the
-truth file is a note in their notes app or a pinned message in the chat.
+A TCE is for one task. The business lives in one file, written once and read by every skill
+that builds for this person: `BUSINESS-TRUTH.md`. Who the business is, what exists, the
+numbers, the rules that never change, what has been built so far, and the prompting rules
+learned from every check. Each task's Context names that file; each task's Expectations
+says to read it first. A prompt that re-explains the business is a truth file that was
+never written. For a person with only a phone, `BUSINESS-TRUTH` is a note in their notes
+app with the same headings. A repo's AGENTS.md or CLAUDE.md counts as a truth file too.
 
-The truth file, v0, looks like this and no longer:
+The file, v0, has these headings and no more:
 
 ```text
-<BUSINESS NAME>, THE FACTS (v0, <date>)
-- Who runs it, from where, on what device.
-- What exists today (the site, the sheet, the register, nothing).
-- The numbers that matter (customers, orders a week, prices, due dates), as given.
-- How work happens today, in one line each.
-- Rules that never change (what must not be touched, what must never be said).
-- Still unknown: [PENDING: ...], one per line.
-- Prompting rules learned from checks: one per line, dated.
+# BUSINESS-TRUTH.md  (v0, <date>)
+## Business: name, what it sells, main customer, location or service area, who runs it
+## Public facts: phone or WhatsApp, email, address shown publicly, hours, prices or offer terms that may be shown, proof supplied
+## Brand: logo or image source, existing site or reference, colours already approved
+## How work happens today: one line each (the register, the sheet, the DMs)
+## Numbers that matter: as given, never rounded up
+## Rules that never change: what must not be touched, what must never be said
+## Assumptions, not verified: one per line
+## Still unknown: [PENDING: ...], one per line
+## What exists now: what has been built, with its address (a site URL, a project name; never a key), updated by every skill that builds
+## Prompting rules learned: one per line, dated, from every check's Next time line
 ```
 
 Never put a password, an API key, a card number or a customer's personal details into
 Context or into the truth file. Point at where they live, or write
 [PENDING: I will supply this directly].
+
+Who owns what when more than one skill is installed: `noguess` owns TCE #0, the truth
+file and the check. A build skill (`build-first-crm`, `remotion-ffmpeg-video`, any skill
+that says it builds a thing) owns the build once `BUSINESS-TRUTH.md` is approved, and
+reads that file instead of asking again. "Build me my first CRM" with no truth file means
+TCE #0 first, then the hand-over; with a truth file it means the build skill, straight away.
 
 ## Start here: TCE #0, the gap analysis
 
@@ -125,8 +136,10 @@ Answer it in plain text, not a code block, with these six labels in this order:
    named, no tool, no cost, no time estimate. A column list is already a build.
 
 Open with one plain line that answers the person ("Yes, and not today: if I build now I
-would be guessing half of it"), then the six steps, then one line saying nothing has been
-created. "Can you build it for me" in a first message is not "do it now"; it is the
+would be guessing half of it"), then the six steps, then two closing lines: "Nothing has
+been created." and "Reply yes when this is right. Then I write BUSINESS-TRUTH.md, and
+[the build skill that is installed, by name] builds from it." A beginner must never have
+to guess the word that moves them forward. "Can you build it for me" in a first message is not "do it now"; it is the
 moment to run this. If a fourth question would change the build, it goes at the top of
 Missing or unclear; three stays three. If the input contradicts itself, keep both as
 [PENDING: which is right, X or Y] and never pick one.
@@ -231,7 +244,8 @@ this yourself and report in plain text; only the corrected answer goes in a code
 - The fix: the corrected answer, with [PENDING: ...] inside it wherever a fact is still
   missing; never a guess.
 - Next time: the one line to add to the prompt so this cannot happen again. It goes into
-  the truth file under prompting rules.
+  `BUSINESS-TRUTH.md` under Prompting rules learned. If a build skill ends with ready,
+  not ready or blocked, keep those three words; they mean the same thing everywhere.
 
 If they pasted an answer with no spec, write the implied spec in three lines from their
 original ask, label it "Assumed spec", ask them to correct it, and check against that.
@@ -286,31 +300,34 @@ Almost every bad answer is one of these. Name it, then fix the prompt, not the m
 
 The person talks, answers and says yes. Knowing which stage you are in is your job.
 
-- **A truth file exists:** read it, do the task. No TCE #0.
+- **A truth file exists (`BUSINESS-TRUTH.md`, AGENTS.md, CLAUDE.md):** read it, do the task.
+  No TCE #0. If a build skill is installed and the task is its kind of build, hand over.
 - **No truth file, and they describe what they want:** TCE #0. Six steps, nothing built.
 - **They answer the questions or correct an assumption:** that is the review. Do not
-  repeat the six steps. Update only what changed, then propose the truth file v0 in the
-  template above and ask one thing: "Is this right? Say yes and I write the first task."
-  Write it only after the yes. If the biggest unknown is still open you may ask up to
-  three more questions, once; a truth file with [PENDING] inside beats a third round.
+  repeat the six steps. Update only what changed, then show `BUSINESS-TRUTH.md` v0 in the
+  template above and ask one thing: "Is this right? Reply yes and I write it." Write it
+  only after the yes. One more round of at most three questions is allowed if the biggest
+  unknown is still open; never a third: a truth file with [PENDING] inside beats more
+  questions.
 - **They add a whole new idea, not an answer:** TCE #0 on the new idea only, with the
   truth file as its Context.
-- **They say yes to the truth file:** propose the smallest task that pays, in one
-  sentence, and write TCE #1 for it. Tell what will change, wait for the yes, then build.
+- **They say yes to the truth file:** if a build skill is installed, say its name and hand
+  over. Otherwise propose the smallest task that pays, in one sentence, write TCE #1 for
+  it, tell what will change, wait for the yes, then build.
 - **An answer comes back, or they say "check it":** the check. Its "Next time" line goes
-  into the truth file; bump the version number and date it.
+  into `BUSINESS-TRUTH.md` under Prompting rules learned; bump the version and date it.
 - **They name the next task:** TCE #2, pointing at the truth file. The person never
   re-explains their business.
 
 Say which stage you are in with one plain line when it changes ("That was the review;
-here is your truth file"). Show a beginner TCE #0 as a TCE once, so they see the method
-applied to itself.
+here is your BUSINESS-TRUTH.md"). Show a beginner TCE #0 as a TCE once, so they see the
+method applied to itself.
 
 ## Make it yours
 
 This skill has no opinion about your product, your client or your stack. When you
-correct a prompt it produced, write the rule into your own project's truth file under
-"Prompting rules", not into this file: this file is replaced when the skill updates. If a
+correct a prompt it produced, write the rule into your `BUSINESS-TRUTH.md` under
+Prompting rules learned, not into this file: this file is replaced when the skill updates. If a
 rule made your agent better, send it to the skill's repo as an issue, with client names
 and numbers removed. Two rules that came from real catches: do-not lines in everyday
 words; an order never sits in Context, not even "read this file first".

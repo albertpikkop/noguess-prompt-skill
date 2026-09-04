@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.4.0, 4 September 2026
+
+The three-skill journey, after a cold review of the set.
+
+- The truth file has one name everywhere: `BUSINESS-TRUTH.md`, with one template shared by
+  noguess, build-first-crm and remotion-ffmpeg-video, including "What exists now" and
+  "Prompting rules learned" so the file keeps getting smarter.
+- Hand-over rules: noguess owns TCE #0, the truth file and the check; an installed build skill
+  owns the build once the file is approved, and reads it instead of asking again.
+- TCE #0 ends by naming the word that moves the student on: "Reply yes when this is right."
+- The marketplace lists all three plugins, so Claude Code students run one marketplace add.
+- SETUP.md: day one per machine (Claude Code, Codex, Mac, Windows, FFmpeg, Python, Supabase).
+- The `tce` alias survives being copied alone.
+
 ## v0.3.0, 3 September 2026
 
 - Renamed to `noguess`. The repo, plugin, skill and command are `noguess`; `/tce` stays as an alias.

@@ -49,6 +49,13 @@ facts from assumptions, say what is missing, name the biggest unknown, ask the t
 easiest questions, recommend one small move, and wait. Without this step an agent
 sounds intelligent and assumes half the project.
 
+## The student kit: three skills, one marketplace
+
+`noguess` is the method. Two build skills use it: [build-first-crm](https://github.com/albertpikkop/first-crm-skill)
+(a first CRM from your business truth) and [remotion-ffmpeg-video](https://github.com/albertpikkop/remotion-ffmpeg-video-skill)
+(a first video). All three read and write one file, `BUSINESS-TRUTH.md`, so the student
+explains their business once. Day-one setup for all three, per machine, is in [SETUP.md](SETUP.md).
+
 ## Install
 
 **Claude Code** (two commands, then say "noguess this" or "TCE this" in any project):
