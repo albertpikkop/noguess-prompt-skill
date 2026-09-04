@@ -90,7 +90,7 @@ it in the Skills panel.
 - `SKILL.md`: the method (the `tce/` folder beside it is only the alias). The three parts, the sorting rule (T and E are orders, C is
   facts only), the procedure, the output shape, the check that closes the loop, the NHA
   structure (notes, facts, files) for messy input, the five context problems, and a
-  catch ledger for your own corrections.
+  Make it yours section for your own rules.
 - `references/examples.md`: six worked examples, from a first conversation to a button
   colour to a login bug to a reply to a customer, plus the check applied.
 - `references/build-prompt.md`: the long form for a new build or a client site, with

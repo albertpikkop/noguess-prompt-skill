@@ -28,8 +28,9 @@ closes it with verified output.
 Do the work, without a gap analysis and without writing a prompt block, when any of these
 is true:
 
-- The repo or project already has a truth file (AGENTS.md, CLAUDE.md, a project doc).
-  Read it first; ask only what it does not answer.
+- The folder already has a truth file that describes this business or project
+  (`BUSINESS-TRUTH.md`, or an AGENTS.md or CLAUDE.md that describes the work). Read it
+  first; ask only what it does not answer. A generic agent config file does not count.
 - The ask names a file or a symptom and a fix ("the login rejects the second attempt,
   it is in session.ts, fix it").
 - The ask is one small, reversible step and the person wants it done now.
@@ -79,19 +80,25 @@ that builds for this person: `BUSINESS-TRUTH.md`. Who the business is, what exis
 numbers, the rules that never change, what has been built so far, and the prompting rules
 learned from every check. Each task's Context names that file; each task's Expectations
 says to read it first. A prompt that re-explains the business is a truth file that was
-never written. For a person with only a phone, `BUSINESS-TRUTH` is a note in their notes
-app with the same headings. A repo's AGENTS.md or CLAUDE.md counts as a truth file too.
+never written. `BUSINESS-TRUTH.md` lives in the folder the agent is running in, the person's project
+folder, and every skill in the kit reads and writes that one file. If it is not there, ask
+for the folder before anything else; never write a second copy somewhere else. For a person with only a phone, `BUSINESS-TRUTH` is a
+note in their notes app with the same headings. A repo's AGENTS.md or CLAUDE.md counts as
+a truth file only when it describes the business or project being worked on; a generic
+agent config file is not one.
 
-The file, v0, has these headings and no more:
+The file, v0, has these headings; a build skill may add a section of its own (the CRM
+skill adds Enquiry), never a second file:
 
 ```text
 # BUSINESS-TRUTH.md  (v0, <date>)
-## Business: name, what it sells, main customer, location or service area, who runs it
+## Business: name, what it sells, main customer, location or service area, who runs it, the main enquiry action (the one thing a page should earn)
 ## Public facts: phone or WhatsApp, email, address shown publicly, hours, prices or offer terms that may be shown, proof supplied
 ## Brand: logo or image source, existing site or reference, colours already approved
 ## How work happens today: one line each (the register, the sheet, the DMs)
 ## Numbers that matter: as given, never rounded up
 ## Rules that never change: what must not be touched, what must never be said
+## Enquiry (the CRM's form): required visitor details, optional details, consent sentence, operator email (the login), each [PENDING: confirm] until the owner says so
 ## Assumptions, not verified: one per line
 ## Still unknown: [PENDING: ...], one per line
 ## What exists now: what has been built, with its address (a site URL, a project name; never a key), updated by every skill that builds
@@ -139,9 +146,11 @@ in this order:
 
 Open with one plain line that answers the person ("Yes, and not today: if I build now I
 would be guessing half of it"), then the six steps, then two closing lines: "Nothing has
-been created." and "Reply yes when this is right. Then I write BUSINESS-TRUTH.md, and
-[the build skill that is installed, by name] builds from it." A beginner must never have
-to guess the word that moves them forward. One more line is allowed when the build skill
+been created." and "Answer the three questions, or say skip. Then I show you BUSINESS-TRUTH.md;
+after your yes to that file, [the build skill that is installed, by name] builds from it."
+There are two yeses in this method and the person must never confuse them: the first
+accepts the file, the second (inside the build skill) accepts a build. Name both. A
+beginner must never have to guess the word that moves them forward. One more line is allowed when the build skill
 needs setup first (an account, a plugin, a connection): name that one step from its
 SETUP.md, because it is the real next blocker; the ban on naming tools is about the build,
 not about setup. If the installed build skill builds less than they asked for, say what it
@@ -251,7 +260,9 @@ this yourself and report in plain text; only the corrected answer goes in a code
   missing; never a guess.
 - Next time: the one line to add to the prompt so this cannot happen again. It goes into
   `BUSINESS-TRUTH.md` under Prompting rules learned. If a build skill ends with ready,
-  not ready or blocked, keep those three words; they mean the same thing everywhere.
+  not ready or blocked, keep those three words; they mean the same thing everywhere. A
+  build skill may add lines to the check (the CRM adds Security and Remaining risk); the
+  six above stay, in this order.
 
 If they pasted an answer with no spec, write the implied spec in three lines from their
 original ask, label it "Assumed spec", ask them to correct it, and check against that.

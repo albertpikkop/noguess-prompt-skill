@@ -9,8 +9,15 @@ the business truth), `remotion-ffmpeg-video` (a first video). Do these steps onc
    Check in a terminal: `node -v`.
 2. **A Supabase account** at supabase.com, free plan. One project per student. Never put two
    students' customers in one project.
-3. **An email you control** (it becomes the operator login) and a **password manager** (the
-   operator password is shown once).
+3. **An email you control** (it becomes the operator login) and a **password manager** (you
+   will set the operator password yourself and keep it there).
+4. **A free static host account**, Cloudflare Pages is fine (pages.cloudflare.com), for the
+   page the CRM skill builds. Codex students who enable Sites can skip this.
+5. **One folder for the business.** Make it, open the agent inside it, and keep using it.
+   `BUSINESS-TRUTH.md`, the file all three skills share, lives there.
+
+On a fresh Mac, `brew` (brew.sh) comes first; the FFmpeg step needs it, and the first
+`python3` command may ask to install Apple's command line tools: say yes.
 
 ## Claude Code, on Mac or on Windows PowerShell
 
@@ -38,8 +45,10 @@ it is missing.
 
 ## Codex, on Mac or on Windows
 
-1. In Codex, open the plugin list. Enable **Sites**. Install **Supabase** and sign in to your
-   Supabase account when it asks.
+1. Sites is optional. The CRM skill's static path works in Codex on a free static host, so
+   a student can skip Sites entirely. If you want Sites, enable it in Codex's plugin settings
+   (the menu differs by version). Either way, install the Supabase plugin in Codex and sign
+   in to your Supabase account when it asks.
 2. Install the three skills. Either one command per skill:
 
 ```bash
@@ -56,7 +65,9 @@ npx skills add albertpikkop/remotion-ffmpeg-video-skill
 
    or by hand: download each repo and copy its `skills/<name>` folder into `~/.codex/skills/`
    on Mac, or `%USERPROFILE%\.codex\skills\` on Windows. For `noguess` copy both `noguess`
-   and `tce` (the `/tce` command). Codex lists the skills on its next start.
+   and `tce` (the `/tce` command). On a machine that has both Claude Code and Codex, use the
+   by-hand copy for Codex, so the skills cannot land in the wrong agent. Restart Codex; it
+   lists the skills on its next start.
 
 ## For the video skill only
 
@@ -68,7 +79,10 @@ npx skills add albertpikkop/remotion-ffmpeg-video-skill
 
 ## The check that it worked
 
-In the agent, type: `TCE this: I want to build a booking page for my salon`. The reply must
-be the six steps (what it understood, facts vs assumptions, missing, biggest unknown, three
-questions, one small move) and nothing built. Then say `yes`, and the CRM skill should take
-over from the truth file without asking the same questions again.
+In the agent, inside the business folder, type: `TCE this: I want an enquiry page for my
+salon`. The reply must be the six steps (what it understood, facts vs assumptions, missing,
+biggest unknown, three questions, one small move) and nothing built. Answer the three
+questions, or say `skip`. It shows you `BUSINESS-TRUTH.md`; say `yes` to that. Then type
+`build my first CRM`: the CRM skill must take over from the file without asking the same
+questions again. For the video skill: `make a 6 second test video` must start with the
+machine check, not a render.
