@@ -7,8 +7,11 @@ the business truth), `remotion-ffmpeg-video` (a first video). Do these steps onc
 
 1. **Node.js**, the LTS version from nodejs.org (the Windows installer or the Mac package).
    Check in a terminal: `node -v`.
-2. **A Supabase account** at supabase.com, free plan. One project per student. Never put two
-   students' customers in one project.
+2. **A Supabase account** at supabase.com, free plan, and **one access token**: open
+   supabase.com/dashboard/account/tokens, Generate new token, any name, copy it once. In your
+   business folder make a file called `.env` with one line, `SUPABASE_ACCESS_TOKEN=<the token>`.
+   The CRM skill's script creates the project, the tables and your login with it, and never
+   prints it. One project per student. Never put two students' customers in one project.
 3. **An email you control** (it becomes the operator login) and a **password manager**. The
    CRM skill gives you a temporary password in the chat; change it after your first login.
 4. **A free static host account**, Cloudflare Pages is fine (pages.cloudflare.com), for the
@@ -40,18 +43,17 @@ claude plugin install build-first-crm@ashishpunj
 claude plugin install remotion-ffmpeg-video@ashishpunj
 ```
 
-Then connect Supabase to Claude Code. The current command is on
-supabase.com/docs/guides/getting-started/mcp; as of September 2026 it is
-`claude mcp add --transport http supabase https://mcp.supabase.com/mcp`, and the first use
-opens a browser to sign in. The CRM skill checks for this and stops with a plain next step if
-it is missing.
+No Supabase plugin or MCP connection is needed: the CRM skill works with the access token
+from step 2 and checks for it first (`node crm.mjs doctor`), stopping with a plain next step
+if it is missing. If you want the Supabase MCP as well (for asking questions about your
+data), the current command is on supabase.com/docs/guides/getting-started/mcp.
 
 ## Codex, on Mac or on Windows
 
 1. Sites is optional. The CRM skill's static path works in Codex on a free static host, so
    a student can skip Sites entirely. If you want Sites, enable it in Codex's plugin settings
-   (the menu differs by version). Either way, install the Supabase plugin in Codex and sign
-   in to your Supabase account when it asks.
+   (the menu differs by version). The Supabase plugin is optional too: the CRM skill uses the
+   access token from step 2, not the plugin.
 2. Install the three skills. Either one command per skill:
 
 ```bash
