@@ -61,7 +61,7 @@ explains their business once. Day-one setup for all three, per machine, is in [S
 **Claude Code** (two commands, then say "noguess this" or "TCE this" in any project):
 
 ```bash
-claude plugin marketplace add albertpikkop/noguess
+claude plugin marketplace add albertpikkop/noguess-prompt-skill
 ```
 
 ```bash
@@ -72,7 +72,7 @@ claude plugin install noguess@ashishpunj
 `skills` tool):
 
 ```bash
-npx skills add albertpikkop/noguess
+npx skills add albertpikkop/noguess-prompt-skill
 ```
 
 **Codex, by hand:** copy `plugins/noguess/skills/noguess` into `~/.codex/skills/noguess`

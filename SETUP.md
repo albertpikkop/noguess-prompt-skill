@@ -22,7 +22,7 @@ On a fresh Mac, `brew` (brew.sh) comes first; the FFmpeg step needs it, and the 
 ## Claude Code, on Mac or on Windows PowerShell
 
 ```bash
-claude plugin marketplace add albertpikkop/noguess
+claude plugin marketplace add albertpikkop/noguess-prompt-skill
 ```
 
 ```bash
@@ -52,7 +52,7 @@ it is missing.
 2. Install the three skills. Either one command per skill:
 
 ```bash
-npx skills add albertpikkop/noguess
+npx skills add albertpikkop/noguess-prompt-skill
 ```
 
 ```bash
