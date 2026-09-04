@@ -68,7 +68,12 @@ claude plugin install noguess@ashishpunj
 npx skills add albertpikkop/noguess
 ```
 
-**Codex, by hand:** copy `plugins/noguess/skills/noguess` into `~/.codex/skills/noguess`.
+**Codex, by hand:** copy `plugins/noguess/skills/noguess` into `~/.codex/skills/noguess`
+(and `plugins/noguess/skills/tce` next to it if you want `/tce` as the command). Codex lists the
+skill on the next start.
+
+**Windows:** the Claude Code commands above are the same in PowerShell. For Codex, the folder is
+`%USERPROFILE%\.codex\skills\noguess`. For `npx skills add`, install Node.js first.
 
 **Claude app and claude.ai:** download `dist/noguess.skill` from the latest release and add
 it in the Skills panel.
