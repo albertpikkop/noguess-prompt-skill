@@ -25,6 +25,7 @@ Three files, in order, each kept so the person can see their own thinking change
 PLAN-v0.md            what they said, sorted. Facts and assumptions, nothing added
 PLAN-v1.md            after the attack. What changed, and the finding that changed it
 PLAN-v2-BLUEPRINT.md  after real answers from real people. Every change cites a response
+PLAN-v3-BLUEPRINT.md  only if the Blueprint changes later. The highest number is current
 ```
 
 v2 has a name because it is a different kind of document. v0 and v1 are thinking.
@@ -71,6 +72,7 @@ or come back in March having forgotten all of it. None of that is a mistake to c
 | `PLAN-v0.md` | their own answers, sorted, not yet attacked | continue from it; never ask the ten questions again |
 | `PLAN-v1.md` | attacked and answered, no outside data yet | continue from it |
 | `PLAN-v2-BLUEPRINT.md` | changed by answers from real strangers | build from it, and say so |
+| `PLAN-v3-BLUEPRINT.md`, v4... | the Blueprint changed later, on new evidence | the highest number is current; read that one |
 | `BUSINESS-TRUTH.md` | the facts every building skill reads | read it, ask only what it does not answer |
 
 Four rules, the same in every skill in this kit:
@@ -87,18 +89,48 @@ Four rules, the same in every skill in this kit:
    the same message is how a beginner ends up answering two different interviews.
 4. **Facts live in one file.** `BUSINESS-TRUTH.md`, in the folder the agent is running
    in. Plans, versions and thinking live in the `PLAN-` files. Never a second copy of
-   either, anywhere.
+   either, anywhere. A plan under any other name (`business-plan.md`, notes, a pasted
+   paragraph) still counts: read it, never ask what it already answers.
 
 If the folder and the person disagree, the person is right and the file is old. Say which
 line you are changing, change it, carry on.
 
-## Stage 0: the folder
+## Stage 0: the folder, and what is already in it
 
 Everything lives in one folder, the person's project folder. Ask for it if the agent is
 not already inside it. The plan files and `BUSINESS-TRUTH.md` live there together.
 
-If `PLAN-v0.md` already exists, read it and go to the stage that comes next: no v1 means
-the attack, v1 but no data means the survey. Never ask the ten questions twice.
+**Most people arrive with something.** A plan they wrote last year, notes from another
+agent, a `business-plan.md`, a Word file, a paragraph pasted into the chat. None of it
+will be called `PLAN-v0.md`, and all of it counts. Before asking anything:
+
+1. Look for it: any `PLAN-*.md`, `BUSINESS-TRUTH.md`, and any file whose name or first
+   lines read like a plan, an idea, a pitch or notes about a business (`plan`, `idea`,
+   `business`, `pitch`, `notes`, a README that describes the business). Read documents in
+   any format the agent can open. A plan pasted into the message counts as a file.
+2. If two sources disagree, ask which one is current. That is the only question allowed
+   before reading.
+3. Map what you found onto the ten questions. For each: answered with a fact, answered
+   with a guess, or missing. Keep their words.
+
+Then judge it, do not route it. **The question is whether it is good enough to move,
+not which file is missing.**
+
+- **Good enough** means at least eight of the ten answered, and question 2 names a
+  person who could be phoned this week (not a category), and question 4 describes
+  something observable, not the absence of the product. Say so in one line, ask nothing,
+  and go straight to the next real step: the attack if it has never been attacked, the
+  survey if it has and no outside answers exist, the Blueprint if answers exist.
+- **Not yet** means ask at most three questions, the ones that decide the most, in this
+  order of value: the person (2), the problem (4), the money (6), the evidence (9), the
+  unknown (10). Never a question the material already answers. Then move.
+
+Whatever you found, if no `PLAN-v0.md` exists yet, write one from it, sorted into the
+ten questions, with one line at the top naming the source it came from. Their original
+file is never edited or moved. If the plan has already been attacked somewhere (scores,
+gaps, a "what changed"), write it as `PLAN-v1.md` instead and say why.
+
+Never run the ten questions on a person who has already answered them somewhere.
 
 ## Stage 1: the ten questions
 
@@ -228,6 +260,26 @@ If the data does not support any change, that is a result: write it, and say the
 survived contact. A Blueprint that only ever confirms its author is a Blueprint nobody
 attacked.
 
+**When the answers contradict the plan on the person, the problem or the money, that is a
+pivot on the table, and naming it is not enough.** Do this, in this order:
+
+1. Say exactly what the data contradicts, with the count or the quotes. "Seven of ten
+   said they book by phone, none by WhatsApp. v1 assumed WhatsApp."
+2. Lay out the three options a person always has, each in one line with what it costs:
+   **keep** (and why the sample may not be strong enough to move on), **tweak** (the
+   smallest change that fits the data), **pivot** (only to where the data actually
+   points; never to a direction you invented to be helpful).
+3. Recommend one, in one line, with the reason. A list of options with no
+   recommendation is the agent hiding.
+4. Say what it means for anything already built: which parts survive as they are (a
+   login, a table, a page shell), which lines change (the customer, the offer, the
+   words on the page, the form fields), and that the change is a change request to the
+   building skill, not a rebuild.
+5. The person decides. Write the decision into the Blueprint as one sentence, with the
+   evidence next to it. Update `BUSINESS-TRUTH.md` in the same breath.
+
+A pivot the person did not choose is not a pivot, it is the agent taking the business.
+
 ## Stage 7: the facts file, written every time
 
 The plan files are the thinking. The builders need the facts, and a person may jump to a
@@ -247,6 +299,32 @@ building skill is installed, say the plan is ready and stop.
 Keep the two apart in your head. `BUSINESS-TRUTH.md` says what is true right now.
 The `PLAN-` files say what the person decided and why they changed their mind. A builder
 that reads the plan files instead of the facts file will build a history.
+
+## Stage 8: when the Blueprint changes later
+
+The Blueprint is not the end. Three weeks into building, a customer says something, a
+price fails, the person notices the plan was wrong about who buys. They say "I learned
+that", "this is not working", "I want to change the plan", "a customer told me". Do not
+restart, do not attack, do not ask the ten questions.
+
+1. Read the current Blueprint (the highest-numbered `PLAN-v*-BLUEPRINT.md`).
+2. Name what the new fact contradicts, line by line, and what it leaves untouched. Most
+   news touches one or two lines, not the plan.
+3. If it touches nothing that decides the business, say so: note it under Still
+   unknown or Evidence, and carry on with the same Blueprint. Not every new fact is a
+   pivot, and telling a person to rethink everything on one remark is its own harm.
+4. If it does touch the person, the problem or the money: the same three options as
+   Stage 6, keep, tweak or pivot, each with its cost, one recommended with the reason,
+   and what happens to what is already built.
+5. The person decides. Then write the next version: `PLAN-v3-BLUEPRINT.md`, then v4,
+   and so on. The highest number is the current Blueprint and the one every builder
+   reads. The old one stays, untouched, so the change can be seen. Update
+   `BUSINESS-TRUTH.md` the same moment.
+6. If anything is built, hand the exact lines that changed to the building skill as a
+   change request, in one message, so the page and the form move with the plan.
+
+One fact from one person is a reason to ask two more people, not a reason to pivot.
+Say that when it applies.
 
 ## The check, at the end of every version
 

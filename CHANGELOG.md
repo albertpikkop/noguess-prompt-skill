@@ -1,5 +1,26 @@
 # Changelog
 
+## business-blueprint v0.1.0 and noguess v0.5.0, 5 September 2026
+
+- New skill in the kit, `business-blueprint`: the plan in three kept versions. Ten plain
+  questions answered in the person's own words become `PLAN-v0.md`; a gap attack that
+  scores each area, names the gap under every score and never scores an assumption
+  above 7 becomes `PLAN-v1.md`; seven survey questions and ten answers from strangers
+  become `PLAN-v2-BLUEPRINT.md`. `BUSINESS-TRUTH.md` is written from v0 onward so a
+  builder never interviews twice.
+- A pivot is handled, not just named: the data that contradicts the plan, the three
+  options with their cost, one recommendation with the reason, what survives of anything
+  already built, and the person decides. A later pivot writes `PLAN-v3-BLUEPRINT.md`; the
+  highest number is current.
+- A plan that already exists under any name (a business-plan.md, notes, a pasted
+  paragraph) is read and judged, not re-asked: at most three questions, none if it is
+  good enough, then straight to the next real step.
+- The folder decides, not the order: one shared contract, identical in every skill of the
+  kit. Read the folder first, never re-ask what a file answers, never refuse because an
+  earlier step is missing, one skill answers a message, facts live in one file.
+- noguess: a business idea with no plan is handed to the plan skill, not straight to a
+  builder.
+
 ## v0.4.0, 4 September 2026
 
 The three-skill journey, after a cold review of the set.

@@ -94,6 +94,54 @@
         "The reply notes in one line that v1 has not met real people yet, without refusing to continue",
         "The reply contains no em-dash or en-dash characters"
       ]
+    },
+    {
+      "id": 7,
+      "prompt": "help me plan my business. i already wrote a plan last month, it is in the folder",
+      "files": [
+        "evals/files/business-plan.md"
+      ],
+      "expected_output": "Reads business-plan.md (not named PLAN-v0.md) without being told which file, maps it onto the ten questions, does not ask the ten questions, judges it: the customer is a category and the price has no source, so it asks at most three questions (the person, the money, the evidence), then writes PLAN-v0.md naming business-plan.md as its source and leaves the original untouched.",
+      "expectations": [
+        "The reply finds and reads the existing plan file although it is not named PLAN-v0.md, without asking the person to paste it",
+        "The reply does not ask the ten questions again; it asks at most three, and only about what the file does not answer (the person, the money, the evidence)",
+        "The reply names 'small business owners' as a category rather than a person who could be phoned this week",
+        "The reply says it will write PLAN-v0.md from the existing file, names the source file, and does not edit or move the original",
+        "The reply contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "the survey is in. 10 answers from the salon whatsapp group, none are friends. 8 said they take bookings by phone call, 1 by whatsapp, 1 walk in only. 7 said the annoying part is customers who book and never come. nobody mentioned missed calls. what now",
+      "files": [
+        "evals/files/PLAN-v1.md"
+      ],
+      "expected_output": "Counts first (10 responses, 10 relevant, 0 friends), then names what the data contradicts: v1 assumed WhatsApp bookings and missed calls; the data says phone bookings and no-shows. Lays out keep, tweak and pivot with the cost of each, recommends one with the reason, says what survives of anything built (login, table) and what changes (the problem line, the offer, the words on the page), and asks the person to decide. Writes the Blueprint only after their decision, with the counts next to each change. Does not invent a new business.",
+      "expectations": [
+        "The reply states the three counts (responses, relevant, from strangers) before any interpretation",
+        "The reply names exactly what the data contradicts in v1: WhatsApp bookings and missed calls, versus phone bookings and no-shows",
+        "The reply lays out keep, tweak and pivot, each with what it costs, and recommends one with a reason",
+        "The reply says what survives of anything already built and what lines change, framed as a change request rather than a rebuild",
+        "The reply asks the person to decide and does not write the Blueprint before that decision",
+        "The reply does not invent a new direction the data does not point at, and cites counts or quotes for every proposed change",
+        "The reply contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "i have been building for two weeks. yesterday one salon owner told me she would never let a machine talk to her customers. should i change the whole plan?",
+      "files": [
+        "evals/files/PLAN-v2-BLUEPRINT.md"
+      ],
+      "expected_output": "Does not restart, attack or ask the ten questions. Reads the current Blueprint, names which lines the remark touches and which it leaves untouched, and says plainly that one fact from one person is a reason to ask two more people, not to pivot. Offers keep, tweak or pivot only if the remark touches the person, problem or money; otherwise notes it under Still unknown and carries on with the same Blueprint. If a change is chosen later it goes into PLAN-v3-BLUEPRINT.md, the old one kept.",
+      "expectations": [
+        "The reply does not restart the plan, run the attack, or ask the ten questions",
+        "The reply names which lines of the Blueprint the remark touches and which it leaves untouched",
+        "The reply says that one remark from one person is a reason to ask two more people, not a reason to pivot",
+        "The reply either notes the remark under Still unknown and keeps the same Blueprint, or lays out keep, tweak and pivot with a recommendation; it does not tell the person to change the whole plan",
+        "The reply says a later change would be written as PLAN-v3-BLUEPRINT.md with the previous version kept",
+        "The reply contains no em-dash or en-dash characters"
+      ]
     }
   ]
 }
