@@ -57,14 +57,48 @@ the file headings and [PENDING] stay in English. No em-dashes in text you write.
 Nothing here is permission. This skill writes files in the person's own folder and
 nothing else. It creates no account, no form, no site, no cost.
 
+## The folder decides, not the order
+
+A person arrives wherever they arrive. They may ask to build on the first day, run the
+survey before the plan, install this skill in the middle of something already half done,
+or come back in March having forgotten all of it. None of that is a mistake to correct.
+
+**Read the folder before you decide anything.** It is the only record of where they are.
+
+| In the folder | What it means | What you do |
+|---|---|---|
+| nothing yet | an idea, nothing written down | start the thing they asked for |
+| `PLAN-v0.md` | their own answers, sorted, not yet attacked | continue from it; never ask the ten questions again |
+| `PLAN-v1.md` | attacked and answered, no outside data yet | continue from it |
+| `PLAN-v2-BLUEPRINT.md` | changed by answers from real strangers | build from it, and say so |
+| `BUSINESS-TRUTH.md` | the facts every building skill reads | read it, ask only what it does not answer |
+
+Four rules, the same in every skill in this kit:
+
+1. **Never re-ask what a file already answers.** Read first, then ask at most three
+   things, and only about what is missing. A person who answers the same question twice
+   stops trusting the machine, and they are right to.
+2. **Do the thing they asked.** Never refuse because an earlier step is missing. Say in
+   one line what is thin and what it risks, offer the shorter version of the missing
+   step, then do what they asked if they still want it. A skill that blocks makes people
+   start a new empty folder, and that is how the work gets lost.
+3. **One skill answers.** Whichever skill owns the thing they actually asked for runs the
+   conversation. The others contribute at most one line inside it. Two skills taking over
+   the same message is how a beginner ends up answering two different interviews.
+4. **Facts live in one file.** `BUSINESS-TRUTH.md`, in the folder the agent is running
+   in. Plans, versions and thinking live in the `PLAN-` files. Never a second copy of
+   either, anywhere.
+
+If the folder and the person disagree, the person is right and the file is old. Say which
+line you are changing, change it, carry on.
+
 ## Stage 0: the folder
 
 Everything lives in one folder, the person's project folder. Ask for it if the agent is
-not already inside it. All three plan files and, later, `BUSINESS-TRUTH.md` live there
-together. Never write a second copy somewhere else.
+not already inside it. The plan files and `BUSINESS-TRUTH.md` live there together.
 
-If `PLAN-v0.md` already exists, read it. Do not ask the ten questions again. Go to the
-stage that comes next: no v1 yet means the attack, v1 but no data means the survey.
+If `PLAN-v0.md` already exists, read it and go to the stage that comes next: no v1 means
+the attack, v1 but no data means the survey. Never ask the ten questions twice.
 
 ## Stage 1: the ten questions
 
@@ -194,16 +228,25 @@ If the data does not support any change, that is a result: write it, and say the
 survived contact. A Blueprint that only ever confirms its author is a Blueprint nobody
 attacked.
 
-## Stage 7: hand over to the builders
+## Stage 7: the facts file, written every time
 
-The plan files are the thinking. The builders need the facts. After v1, and again after
-v2, write or update `BUSINESS-TRUTH.md` in the same folder: name, what it sells, the
+The plan files are the thinking. The builders need the facts, and a person may jump to a
+builder at any moment, so this is not a final step. **Write or update
+`BUSINESS-TRUTH.md` in the same folder as soon as v0 exists, and again after every
+version.** Then a student who says "now build me the page" halfway through never gets
+interviewed a second time.
+
+The file holds: name, what it sells, the
 customer, the location, the public facts, the rules, what exists now, every unknown as
 [PENDING]. Never a key, a password or a customer's personal details.
 
 That one file is what `build-first-crm` and `remotion-ffmpeg-video` read, so they never
-ask these questions again. Say which file you wrote and which skill reads it next. If
-only `noguess` is installed, say the plan is ready and stop.
+ask these questions again. Say which file you wrote and which skill reads it next. If no
+building skill is installed, say the plan is ready and stop.
+
+Keep the two apart in your head. `BUSINESS-TRUTH.md` says what is true right now.
+The `PLAN-` files say what the person decided and why they changed their mind. A builder
+that reads the plan files instead of the facts file will build a history.
 
 ## The check, at the end of every version
 

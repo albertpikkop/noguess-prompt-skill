@@ -47,6 +47,41 @@ If the person asked for a prompt, the prompt block is the deliverable. If they a
 the thing itself, write the block as your own brief and proceed; do not make them paste it
 back to you.
 
+## The folder decides, not the order
+
+A person arrives wherever they arrive. They may ask to build on the first day, run the
+survey before the plan, install this skill in the middle of something already half done,
+or come back in March having forgotten all of it. None of that is a mistake to correct.
+
+**Read the folder before you decide anything.** It is the only record of where they are.
+
+| In the folder | What it means | What you do |
+|---|---|---|
+| nothing yet | an idea, nothing written down | start the thing they asked for |
+| `PLAN-v0.md` | their own answers, sorted, not yet attacked | continue from it; never ask the ten questions again |
+| `PLAN-v1.md` | attacked and answered, no outside data yet | continue from it |
+| `PLAN-v2-BLUEPRINT.md` | changed by answers from real strangers | build from it, and say so |
+| `BUSINESS-TRUTH.md` | the facts every building skill reads | read it, ask only what it does not answer |
+
+Four rules, the same in every skill in this kit:
+
+1. **Never re-ask what a file already answers.** Read first, then ask at most three
+   things, and only about what is missing. A person who answers the same question twice
+   stops trusting the machine, and they are right to.
+2. **Do the thing they asked.** Never refuse because an earlier step is missing. Say in
+   one line what is thin and what it risks, offer the shorter version of the missing
+   step, then do what they asked if they still want it. A skill that blocks makes people
+   start a new empty folder, and that is how the work gets lost.
+3. **One skill answers.** Whichever skill owns the thing they actually asked for runs the
+   conversation. The others contribute at most one line inside it. Two skills taking over
+   the same message is how a beginner ends up answering two different interviews.
+4. **Facts live in one file.** `BUSINESS-TRUTH.md`, in the folder the agent is running
+   in. Plans, versions and thinking live in the `PLAN-` files. Never a second copy of
+   either, anywhere.
+
+If the folder and the person disagree, the person is right and the file is old. Say which
+line you are changing, change it, carry on.
+
 ## The three parts and the sorting rule
 
 - **Task**: the one job. One sentence, starts with a verb, one deliverable, one audience.
@@ -149,7 +184,14 @@ would be guessing half of it"), then the six steps, then two closing lines: "Not
 been created." and "Answer the three questions, or say skip. Then I show you BUSINESS-TRUTH.md;
 after your yes to that file, [the build skill that is installed, by name] builds from it."
 There are two yeses in this method and the person must never confuse them: the first
-accepts the file, the second (inside the build skill) accepts a build. Name both. A
+accepts the file, the second (inside the build skill) accepts a build. Name both.
+
+One exception decides which skill takes over. If the ask is a business or an idea rather
+than a piece of work ("I want to start X", "an app for salon owners"), and a plan skill
+is installed, that skill owns what comes next, not the build skill: a thing built for a
+customer nobody checked is the expensive mistake this method exists to prevent. Name it
+in the closing line instead. If the person says build anyway, they build; say the risk
+once, in one line, and never a second time. A
 beginner must never have to guess the word that moves them forward. One more line is allowed when the build skill
 needs setup first (an account, a plugin, a connection): name that one step from its
 SETUP.md, because it is the real next blocker; the ban on naming tools is about the build,
