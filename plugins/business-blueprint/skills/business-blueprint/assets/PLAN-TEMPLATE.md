@@ -1,6 +1,10 @@
-# PLAN <version>  (<business or idea name>, <date>)
+# PLAN <version>  (<the name they gave, or "no name yet">, <date>)
 
 Every line is a fact they said, an Assumption, or [PENDING]. Nothing else goes in.
+
+## The decision
+- [v2 and later only. Go, pivot or tweak, in one sentence, written out loud, with the
+  count or quote behind it. On v0 and v1 this line reads: not decided yet]
 
 ## 1. What I am trying to improve or create
 - [PENDING]
@@ -37,16 +41,16 @@ Every line is a fact they said, an Assumption, or [PENDING]. Nothing else goes i
 - [PENDING]
 
 ## Assumptions, not verified
-- [one per line, or none]
+- [one per line, or none. From v1 on, each one carries its state: open, confirmed
+  (count), or disproven (count). A disproven assumption stays here, marked, never deleted]
 
 ## Still unknown
 - [one per line]
 
 ## What changed from the last version
-- [v1 and later only. Each change with the finding or the response behind it]
+- [v1 and later only. Every line that changed, each with the finding or the response
+  behind it. A change with nothing behind it is the agent rewriting the plan]
 
 ## Scores from the attack
-- [v1 and later only. The ten scores, kept, so the next attack can be compared]
-
-## The decision
-- [v2 only. Go, pivot or tweak, in one sentence, written out loud]
+- [v1 and later only. The ten scores, kept, and the two gaps the attack ranked highest,
+  in words, so the survey and the next attack can use them]

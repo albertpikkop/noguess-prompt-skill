@@ -3,10 +3,12 @@
 Read this in Stage 5. This is the slowest stage and the only one that turns a guess into
 a plan. It takes days. Rushing it is how a Blueprint becomes fiction with a nice cover.
 
-## The instrument
+## The survey
 
-**Six short questions and one very short paragraph question.** Seven in total, on a
-Google Form, with the answers going into its linked Google Sheet.
+**Six short questions and one very short paragraph question.** Seven in total, usually on
+a Google Form with the answers going into its linked Google Sheet. Answers collected by
+phone or in person and typed into the sheet by the person count just the same. The bar is
+who answered, not how the answer travelled.
 
 Seven because a form that takes over two minutes gets abandoned by exactly the strangers
 whose answers matter most. The friends finish it. That is the wrong sample.
@@ -42,7 +44,8 @@ Cover, in this order of value:
 3. Money: what they paid, or pay now, for the workaround
 4. The customer in question 2: one question that confirms this person is that person
 5. The biggest [PENDING] from question 10
-6. One more from the two gaps the attack ranked highest
+6. One more from the two gaps the attack ranked highest (v1 records them in words under
+   its scores)
 7. The paragraph: open, in their words
 
 ## The rules that make answers worth having
@@ -72,7 +75,9 @@ Does not: create the Form, send it to anyone, collect anything, or invent a resp
 
 The two steps, in plain words: make a new Google Form and paste the seven questions in;
 in the Responses tab, link it to a new Google Sheet. Then share the link where the real
-people are, which is a place they named in question 3.
+people are, which is a place they named in question 3. If a form is a wall for this
+person, ask the seven questions by phone or at the counter instead. Typed into a sheet
+the same day, they are just as good.
 
 Never suggest sending it to their contact list. That is the friends problem, wearing a
 different hat.

@@ -1,6 +1,6 @@
 {
   "name": "business-blueprint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Your business plan in three versions: answer ten plain questions to get v0, let the AI attack it without sugarcoating to get v1, then add real answers from real people to get v2, the Blueprint. Nothing invented, every guess labelled, every version kept as its own file.",
   "author": {
     "name": "Ashish Punj",

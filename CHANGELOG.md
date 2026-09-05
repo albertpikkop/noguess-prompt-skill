@@ -1,5 +1,28 @@
 # Changelog
 
+## business-blueprint v0.1.1, 5 September 2026
+
+After a cold review of v0.1.0 (30 findings). The worked example invented a business name, a
+price, an offer and a customer quote in a skill whose one promise is that nothing is
+invented; all three fixtures are rewritten so every line is a fact the person gave, an
+Assumption, or [PENDING], and disproven assumptions stay visible with their counts.
+
+- A lift is something to find out or decide, never the answer itself ("ask three owners
+  what they pay today", never "charge Rs 500").
+- A plan that arrives good enough is offered the attack, never ambushed with it.
+- A survey that contradicts nothing is a warning and a result, not a dead end; a missing
+  bar writes v1 instead of refusing.
+- The pivot procedure also fires when the offer moves, and "keep" is argued as what would
+  have to be true for the data to be wrong.
+- `BUSINESS-TRUTH.md` is shown and gets the same yes `noguess` asks for before it is
+  written, and uses the shared template's headings exactly, so `build-first-crm` never
+  re-interviews.
+- Triggers added for the later pivot ("a customer told me something", "should I pivot")
+  and more Hinglish; a work-shaped ask is handed back to `noguess`.
+- Plain words: "cost if it stays" instead of "size", "the survey" instead of "the
+  instrument", long sentences split.
+- Evals aligned with the skill's own rules.
+
 ## business-blueprint v0.1.0 and noguess v0.5.0, 5 September 2026
 
 - New skill in the kit, `business-blueprint`: the plan in three kept versions. Ten plain

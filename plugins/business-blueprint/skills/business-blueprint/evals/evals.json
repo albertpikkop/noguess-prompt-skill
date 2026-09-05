@@ -23,7 +23,7 @@
       "expectations": [
         "The reply writes v0 using only the person's own answers, keeping their numbers and words",
         "Questions 3 and 6 are marked [PENDING] rather than filled in with a guess",
-        "The cousin is recorded as evidence but labelled as one person and as family, not treated as proof",
+        "The cousin is recorded as an Assumption (one person, and family), not as evidence",
         "The reply marks 'salon owners' as a category rather than a person who could be contacted",
         "The reply offers the attack and waits for a yes before running it",
         "The reply does not invent a price, a location, a market size or a competitor",
@@ -38,7 +38,8 @@
       ],
       "expected_output": "Ten areas, each with a score out of ten, a named gap, a size and one lift. Nothing supported only by an Assumption scores above 7, so evidence scores low. Then the two that matter most, and three questions answerable from memory. No rewrite of the plan, no encouragement sandwich, no verdict that the idea is bad.",
       "expectations": [
-        "Every area carries a score, a named gap, a size and one lift the person could do themselves",
+        "Every area carries a score with a named gap, a cost if it stays and one lift the person could do themselves, or [PENDING] with the reason where no gap can be named",
+        "No lift supplies an answer (a price, a name, a customer, an offer); every lift is something to find out or decide",
         "No area supported only by an assumption is scored above 7, and the evidence area scores low",
         "The reply ranks the two gaps that matter most instead of listing ten equal problems",
         "The reply ends with three questions the person could answer from memory or one phone call",
@@ -53,12 +54,12 @@
       "files": [
         "evals/files/PLAN-v0.md"
       ],
-      "expected_output": "Refuses to write v2, in plain words and without lecturing: three responses, all friends or family, is not the bar. Names the bar (ten relevant responses from people who are not friends or family) and why friends answer kindly. Offers to write the seven survey questions instead, or to write v1 if the attack has not run.",
+      "expected_output": "Refuses to write v2, in plain words and without lecturing: three responses, all friends or family, is not the bar. Names the bar (ten relevant responses from people who are not friends or family) and why friends answer kindly. Since the plan is a v0 that has never been attacked, offers the attack as the next real step, not the survey.",
       "expectations": [
         "The reply does not write a v2 or Blueprint file",
         "The reply names the bar plainly: ten relevant responses from people who are not friends or family",
         "The reply explains in one or two lines why friends and family answers do not settle anything",
-        "The reply offers the next real step (the seven survey questions, or v1 first) rather than only refusing",
+        "The reply offers the attack as the next real step (the plan is a v0 and the survey is written from a v1), rather than only refusing",
         "The reply does not lecture or moralise at the person",
         "The reply contains no em-dash or en-dash characters"
       ]
@@ -101,10 +102,10 @@
       "files": [
         "evals/files/business-plan.md"
       ],
-      "expected_output": "Reads business-plan.md (not named PLAN-v0.md) without being told which file, maps it onto the ten questions, does not ask the ten questions, judges it: the customer is a category and the price has no source, so it asks at most three questions (the person, the money, the evidence), then writes PLAN-v0.md naming business-plan.md as its source and leaves the original untouched.",
+      "expected_output": "Reads business-plan.md (not named PLAN-v0.md) without being told which file, maps it onto the ten questions, does not ask the ten questions, judges it: the customer is a category, the problem is stated as the absence of the product, and the price has no source, so it asks at most three questions (the person, the problem, the money), then writes PLAN-v0.md naming business-plan.md as its source and leaves the original untouched.",
       "expectations": [
         "The reply finds and reads the existing plan file although it is not named PLAN-v0.md, without asking the person to paste it",
-        "The reply does not ask the ten questions again; it asks at most three, and only about what the file does not answer (the person, the money, the evidence)",
+        "The reply does not ask the ten questions again; it asks at most three, and only about what the file does not answer, in the skill's order (the person, the problem, the money)",
         "The reply names 'small business owners' as a category rather than a person who could be phoned this week",
         "The reply says it will write PLAN-v0.md from the existing file, names the source file, and does not edit or move the original",
         "The reply contains no em-dash or en-dash characters"
@@ -123,7 +124,7 @@
         "The reply lays out keep, tweak and pivot, each with what it costs, and recommends one with a reason",
         "The reply says what survives of anything already built and what lines change, framed as a change request rather than a rebuild",
         "The reply asks the person to decide and does not write the Blueprint before that decision",
-        "The reply does not invent a new direction the data does not point at, and cites counts or quotes for every proposed change",
+        "The reply does not invent a new direction or a new offer the data does not point at; the offer stays [PENDING] unless a response supports one, and every proposed change cites a count or a quote",
         "The reply contains no em-dash or en-dash characters"
       ]
     },

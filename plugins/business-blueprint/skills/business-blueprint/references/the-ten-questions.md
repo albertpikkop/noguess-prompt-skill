@@ -24,7 +24,7 @@ Weak: "small businesses", "students", "everyone", "SMEs in India". A category ca
 phoned, and a plan aimed at a category is a plan aimed at nobody.
 This is the one follow-up always worth asking: "name one person who fits, or describe one
 closely enough that I would recognise them in a room." If they cannot, that is not a
-failure, it is the biggest [PENDING] in the plan and it belongs in question 10.
+failure. It is the biggest [PENDING] in the plan, and it belongs in question 10.
 
 **3. Where are they, or how will they find me?**
 

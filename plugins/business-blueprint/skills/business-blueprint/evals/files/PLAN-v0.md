@@ -29,7 +29,8 @@
 - Maybe Rs 20,000 (fact, said as a maybe)
 
 ## 9. Evidence I already have
-- One cousin who owns a salon says it happens (fact). One person, and family
+- One cousin who owns a salon says it happens. Assumption: one person, and family, so it
+  is not evidence yet
 
 ## 10. My biggest unknown or decision
 - Whether they would pay (fact)

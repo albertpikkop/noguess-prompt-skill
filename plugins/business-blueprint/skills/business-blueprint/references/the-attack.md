@@ -16,8 +16,8 @@ Ten areas, one for each question. For each one:
 ```text
 <area>  <score>/10
 Gap:    [what is missing or weak, plain words, one or two lines]
-Size:   [big / medium / small, and what it costs if it stays]
-Lift:   [the one thing that raises this score, doable by them]
+Cost if it stays: [big / medium / small, and what it costs them]
+Lift:   [the one thing to find out or decide that raises this score, doable by them]
 ```
 
 Then, and only then:
@@ -29,6 +29,14 @@ Three questions worth answering next: [three, answerable by them, one ask each]
 
 Nothing else. No summary, no encouragement, no rewrite.
 
+## What a lift is, and is not
+
+A lift is something to find out or decide. It is never the answer itself. "Ask three
+owners what they pay today" is a lift. "Charge Rs 500 a month" is the agent inventing a
+price with extra steps, and the person will defend that price next week as if it were
+theirs. The same holds for a name, a customer, an offer or a channel: point at where the
+answer lives, never supply it.
+
 ## What the score means, and what it does not
 
 The number is a judgment, not a measurement. Two honest people would score the same plan
@@ -37,8 +45,8 @@ That is why a score with no gap is not allowed. If you cannot name what is missi
 write [PENDING] where the score would be and say why.
 
 The one hard rule that keeps scores honest: **nothing supported only by an Assumption
-scores above 7.** Not because the idea is bad, but because confidence without evidence is
-exactly the failure being caught. A plan can be brilliant and still score 4 on evidence.
+scores above 7.** Not because the idea is bad. Confidence without evidence is exactly the
+failure being caught. A plan can be brilliant and still score 4 on evidence.
 Say that out loud when it happens, in one line, so the person does not read a low score
 as a verdict on the idea.
 
@@ -66,10 +74,10 @@ once, because a beginner reading ten low scores can quit for the wrong reason.
 That the idea is bad. That is not a finding, it is an opinion, and it is not this
 skill's job. The findings are gaps and their sizes. The person decides what that means.
 
-If every area scores low and the honest read is that the plan has no customer yet, say
-that as a fact about the plan, in one line: "nine of ten areas rest on Assumptions, so
-this is an idea, not yet a plan. That is where the survey starts." No verdict, no advice
-to stop.
+Sometimes every area scores low and the honest read is that the plan has no customer
+yet. Say that as a fact about the plan, in one line: "nine of ten areas rest on
+Assumptions, so this is an idea, not yet a plan. That is where the survey starts." No
+verdict, no advice to stop.
 
 ## After the attack
 
@@ -78,5 +86,5 @@ finding that caused it. Changes with no finding behind them are the agent's opin
 leaking in, and they get removed.
 
 Do not run the attack twice on the same version. Attacking v1 is a real thing to do, but
-only after the person has answered; and the interesting comparison is then the scores
-side by side, which is why v1 keeps the old ones.
+only after the person has answered. The interesting comparison is then the scores side
+by side. That is why v1 keeps the old ones.

@@ -5,14 +5,14 @@ description: >-
   versions: ten plain questions answered in the person's own words become v0, a
   ruthless gap attack that scores each area and names what is missing becomes v1,
   and real answers from real strangers become v2, the Blueprint. Use when someone
-  says "help me plan my business", "mera business plan banao", "I have an idea",
-  "rate my plan", "what are the gaps in my plan", "attack my plan", "be ruthless",
-  "is this idea any good", "make my v0", "close my v1", or asks for a survey to
-  test an idea. Also use before any building skill when only an idea exists.
-  Nothing is invented: every guess is labelled Assumption and every unknown stays
-  [PENDING]. Stand down when a finished plan or Blueprint already exists and the
-  ask is to build it, when the ask is one small task, or when the person wants
-  writing help rather than a plan.
+  says "help me plan my business", "mera business plan banao", "business idea hai",
+  "I have an idea", "rate my plan", "attack my plan", "be ruthless", "is this idea
+  any good", "make my v0", "survey banao", and later "a customer told me something",
+  "I want to change the plan", "should I pivot". Also use before any building skill
+  when only an idea exists. Nothing is invented: every guess is labelled Assumption
+  and every unknown stays [PENDING]. Stand down when the ask is a piece of work or a
+  prompt rather than a business (noguess owns it), when a finished Blueprint exists
+  and the ask is to build it, or when the person wants writing help, not a plan.
 ---
 
 # Business Blueprint
@@ -54,6 +54,8 @@ the file headings and [PENDING] stay in English. No em-dashes in text you write.
 - The ask is one small thing (a caption, an email, a fix): just do it.
 - The person wants writing or design help, not a plan.
 - The attack already ran in this conversation: do not run it again on the same version.
+- The ask is a piece of work or a prompt ("write me the prompt for", "TCE this", "fix
+  this page") rather than a business: noguess owns it. Hand it back in one line.
 
 Nothing here is permission. This skill writes files in the person's own folder and
 nothing else. It creates no account, no form, no site, no cost.
@@ -104,10 +106,10 @@ not already inside it. The plan files and `BUSINESS-TRUTH.md` live there togethe
 agent, a `business-plan.md`, a Word file, a paragraph pasted into the chat. None of it
 will be called `PLAN-v0.md`, and all of it counts. Before asking anything:
 
-1. Look for it: any `PLAN-*.md`, `BUSINESS-TRUTH.md`, and any file whose name or first
-   lines read like a plan, an idea, a pitch or notes about a business (`plan`, `idea`,
-   `business`, `pitch`, `notes`, a README that describes the business). Read documents in
-   any format the agent can open. A plan pasted into the message counts as a file.
+1. Look for it. Any `PLAN-*.md` or `BUSINESS-TRUTH.md`. Any file whose name or first
+   lines read like a plan, an idea, a pitch or notes about a business: `plan`, `idea`,
+   `business`, `pitch`, `notes`, or a README that describes the business. Read documents
+   in any format the agent can open. A plan pasted into the message counts as a file.
 2. If two sources disagree, ask which one is current. That is the only question allowed
    before reading.
 3. Map what you found onto the ten questions. For each: answered with a fact, answered
@@ -116,12 +118,13 @@ will be called `PLAN-v0.md`, and all of it counts. Before asking anything:
 Then judge it, do not route it. **The question is whether it is good enough to move,
 not which file is missing.**
 
-- **Good enough** means at least eight of the ten answered, and question 2 names a
-  person who could be phoned this week (not a category), and question 4 describes
-  something observable, not the absence of the product. Say so in one line, ask nothing,
-  and go straight to the next real step: the attack if it has never been attacked, the
-  survey if it has and no outside answers exist, the Blueprint if answers exist.
-- **Not yet** means ask at most three questions, the ones that decide the most, in this
+- **Good enough** means three things at once. At least eight of the ten are answered.
+  Question 2 names a person who could be phoned this week, not a category. Question 4
+  describes something observable, not the absence of the product. Then say so in one
+  line and ask nothing. Offer the next real step in one line, never start it unasked.
+  If the plan has never been attacked, offer the attack. If it has, write v1 from what
+  you found, then offer the survey. If answers from strangers exist, offer the Blueprint.
+- **Not yet** means ask at most three questions, the ones that decide the most. The
   order of value: the person (2), the problem (4), the money (6), the evidence (9), the
   unknown (10). Never a question the material already answers. Then move.
 
@@ -134,7 +137,7 @@ Never run the ten questions on a person who has already answered them somewhere.
 
 ## Stage 1: the ten questions
 
-Show all ten first, as a list, and let the person answer in their own words, in any
+Only if Stage 0 found nothing. Show all ten first, as a list, and let the person answer in their own words, in any
 order, in one message or many. This order matters: a beginner handed a blank prompt box
 writes a wish, not a plan. The questions are the scaffold that makes the answer real.
 
@@ -151,8 +154,8 @@ writes a wish, not a plan. The questions are the scaffold that makes the answer 
 10. What is my biggest unknown or decision?
 ```
 
-Say one line before them: answer from memory, guessing is allowed as long as you say it
-is a guess, and "I do not know" is a real answer that keeps the question open.
+Say one line before them. Answer from memory. Guessing is allowed as long as you say it
+is a guess. "I do not know" is a real answer, and it keeps the question open.
 
 Never ask them one at a time as an interrogation. Never add an eleventh question at this
 stage. If they answer six and stop, that is six answers and four [PENDING].
@@ -184,8 +187,8 @@ Ten areas, one per question. For each:
 ```text
 <area>  <score>/10
 Gap:    [the one thing missing or weak, in plain words. Not a story, not a compliment]
-Size:   [big / medium / small, and what it costs them if it stays]
-Lift:   [the one thing that would raise this score, doable by them]
+Cost if it stays: [big / medium / small, and what it costs them]
+Lift:   [the one thing to find out or decide that would raise this score, doable by them]
 ```
 
 Rules that keep it honest:
@@ -197,6 +200,9 @@ Rules that keep it honest:
   evidence is the thing being caught here.
 - Say which two gaps matter most and why, and stop. Ten equal problems is no ranking.
 - Attack the plan, not the person and not their industry.
+- A lift is something to find out or decide, never the answer itself. "Ask three owners
+  what they pay today", never "charge Rs 500". A lift that supplies a price, a name, a
+  customer or a product is the agent inventing with extra steps.
 
 End with the three questions whose answers would move the most, and nothing else. No
 rewrite. The attack finds, it does not fix.
@@ -220,16 +226,18 @@ a plan is answers from people who are not you. Offer Stage 5.
 
 ## Stage 5: the survey, seven questions
 
-Read `references/the-survey.md`. The instrument is **six short questions and one very
-short paragraph question**, run as a Google Form with its answers going to a Sheet.
+Read `references/the-survey.md`. The survey is **six short questions and one very short
+paragraph question**, usually a Google Form with its answers going to a Sheet. Answers
+collected by phone or in person and typed into the sheet count just the same, as long as
+the ten and the not-friends bar hold.
 
 The bar for the data is not the number of responses. It is who they came from:
 **ten relevant responses from people who are not friends and not family.** Friends
-answer to be kind, and kind answers are what let a wrong plan survive for a year.
+answer to be kind. Kind answers are what let a wrong plan survive for a year.
 
-Write the seven questions from their v1, not from a template: each question exists to
-settle one [PENDING] or one Assumption in their own plan, and you say which one under
-each. A question that cannot name what it settles gets cut.
+Write the seven questions from their v1, not from a template. Each question exists to
+settle one [PENDING] or one Assumption in their own plan. Say which one under each. A
+question that cannot name what it settles gets cut.
 
 Never write a question that teaches the answer ("Would you like a faster way to book
 appointments?"). Ask what people did, not what they might do. The one paragraph question
@@ -241,64 +249,69 @@ work; it takes days, and rushing it is how v2 becomes fiction.
 
 ## Stage 6: v2, the Blueprint
 
-Only with the data. Check first, in this order, and stop at the first miss:
+Only with the data. Check first, in this order. At the first miss, say what is
+missing in one line, then write or update v1 from whatever is usable, and offer the
+shortest way to close the gap. Never a refusal with no next move.
 
 - ten or more responses, from outside friends and family
 - the answers are readable and match the questions asked
-- at least one answer contradicts something in v1. If nothing contradicts, say so
-  plainly: either the sample is too friendly, or the questions taught the answer
+
+Then one warning, not a gate: if no answer contradicts anything in v1, say why you
+think that is. Usually the sample was too friendly, or a question described the answer
+it wanted. Say it once, then carry on and write the Blueprint. A plan can survive
+contact; that is a result, and it is written as one.
 
 Then write `PLAN-v2-BLUEPRINT.md`. What makes it a Blueprint and not just v2:
 
 - **every change from v1 cites a response.** Not a feeling, not a pattern you sensed. A
   quote or a count from the sheet, in brackets, next to the change
-- **one sentence said out loud: go, pivot, or tweak.** Not implied. Written
+- **one sentence said out loud: go, pivot, or tweak.** Not implied. Written, at the top
+- **every assumption from v1 kept, marked confirmed, disproven (with the count), or
+  still open.** A killed assumption is shown dead, never deleted
 - **what the data did not settle**, kept as [PENDING], because that is the next survey
 - **the first real person, named or describable enough to contact this week**
 
-If the data does not support any change, that is a result: write it, and say the plan
-survived contact. A Blueprint that only ever confirms its author is a Blueprint nobody
-attacked.
-
-**When the answers contradict the plan on the person, the problem or the money, that is a
-pivot on the table, and naming it is not enough.** Do this, in this order:
+**When the answers contradict the plan on the person, the problem, the offer or the
+money, that is a pivot on the table, and naming it is not enough.** Do this, in this
+order:
 
 1. Say exactly what the data contradicts, with the count or the quotes. "Seven of ten
    said they book by phone, none by WhatsApp. v1 assumed WhatsApp."
-2. Lay out the three options a person always has, each in one line with what it costs:
-   **keep** (and why the sample may not be strong enough to move on), **tweak** (the
-   smallest change that fits the data), **pivot** (only to where the data actually
-   points; never to a direction you invented to be helpful).
+2. Lay out the three options a person always has, one line each, with what it costs.
+   **Keep**: what would have to be true for the data to be wrong. **Tweak**: the
+   smallest change that fits the data. **Pivot**: only to where the data actually
+   points, never to a direction you invented to be helpful.
 3. Recommend one, in one line, with the reason. A list of options with no
    recommendation is the agent hiding.
-4. Say what it means for anything already built: which parts survive as they are (a
-   login, a table, a page shell), which lines change (the customer, the offer, the
-   words on the page, the form fields), and that the change is a change request to the
-   building skill, not a rebuild.
+4. Say what it means for anything already built. Which parts survive as they are: a
+   login, a table, a page shell. Which lines change: the customer, the offer, the words
+   on the page, the form fields. The change is a change request to the building skill,
+   not a rebuild.
 5. The person decides. Write the decision into the Blueprint as one sentence, with the
    evidence next to it. Update `BUSINESS-TRUTH.md` in the same breath.
 
 A pivot the person did not choose is not a pivot, it is the agent taking the business.
 
-## Stage 7: the facts file, written every time
+## Stage 7: the facts file, offered every time
 
-The plan files are the thinking. The builders need the facts, and a person may jump to a
-builder at any moment, so this is not a final step. **Write or update
-`BUSINESS-TRUTH.md` in the same folder as soon as v0 exists, and again after every
-version.** Then a student who says "now build me the page" halfway through never gets
-interviewed a second time.
+The plan files are the thinking. The builders need the facts. A person may jump to a
+builder at any moment, so this is not a final step. As soon as v0 exists, and again after
+every version, fill `assets/BUSINESS-TRUTH-TEMPLATE.md`. It is the one file all the
+skills in this kit share. Keep its headings exactly, and every unknown as [PENDING].
+Show it and ask one thing: "Is this right? Reply yes and I write it." Write
+`BUSINESS-TRUTH.md` into the folder only after the yes. That is the same yes `noguess`
+asks for the same file, so a person meets one rule wherever they start. If the file
+already exists, show only the lines that change and ask the same question.
 
-The file holds: name, what it sells, the
-customer, the location, the public facts, the rules, what exists now, every unknown as
-[PENDING]. Never a key, a password or a customer's personal details.
+Never a key, a password or a customer's personal details in it.
 
 That one file is what `build-first-crm` and `remotion-ffmpeg-video` read, so they never
 ask these questions again. Say which file you wrote and which skill reads it next. If no
 building skill is installed, say the plan is ready and stop.
 
-Keep the two apart in your head. `BUSINESS-TRUTH.md` says what is true right now.
-The `PLAN-` files say what the person decided and why they changed their mind. A builder
-that reads the plan files instead of the facts file will build a history.
+Keep the two apart in your head. `BUSINESS-TRUTH.md` says what is true right now. The
+`PLAN-` files say what the person decided and why they changed their mind. A builder that
+reads the plan files instead of the facts file will build a history.
 
 ## Stage 8: when the Blueprint changes later
 
@@ -310,18 +323,18 @@ restart, do not attack, do not ask the ten questions.
 1. Read the current Blueprint (the highest-numbered `PLAN-v*-BLUEPRINT.md`).
 2. Name what the new fact contradicts, line by line, and what it leaves untouched. Most
    news touches one or two lines, not the plan.
-3. If it touches nothing that decides the business, say so: note it under Still
-   unknown or Evidence, and carry on with the same Blueprint. Not every new fact is a
-   pivot, and telling a person to rethink everything on one remark is its own harm.
-4. If it does touch the person, the problem or the money: the same three options as
-   Stage 6, keep, tweak or pivot, each with its cost, one recommended with the reason,
-   and what happens to what is already built.
+3. If it touches nothing that decides the business, say so. Note it under Still unknown
+   or Evidence and carry on with the same Blueprint. Not every new fact is a pivot.
+   Telling a person to rethink everything on one remark is its own harm.
+4. If it does touch the person, the problem, the offer or the money: the same three
+   options as Stage 6. Keep, tweak or pivot, each with its cost. One recommended, with
+   the reason. And what happens to what is already built.
 5. The person decides. Then write the next version: `PLAN-v3-BLUEPRINT.md`, then v4,
    and so on. The highest number is the current Blueprint and the one every builder
    reads. The old one stays, untouched, so the change can be seen. Update
    `BUSINESS-TRUTH.md` the same moment.
 6. If anything is built, hand the exact lines that changed to the building skill as a
-   change request, in one message, so the page and the form move with the plan.
+   change request, in one message. Then the page and the form move with the plan.
 
 One fact from one person is a reason to ask two more people, not a reason to pivot.
 Say that when it applies.
