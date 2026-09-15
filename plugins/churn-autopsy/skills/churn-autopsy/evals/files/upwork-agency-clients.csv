@@ -1,0 +1,13 @@
+client_id,source,start_date,fee_usd_per_month,ad_spend_usd_per_month,promised_in_proposal,leads_delivered_day_30,leads_delivered_day_60,last_contact_by,stopped_date,stated_reason,owner_note
+C01,Upwork,2026-06-02,200,1000,60 leads a month,18,,client,2026-07-05,no results,they never gave us creatives
+C02,Upwork,2026-06-04,150,800,50 leads a month,9,,agency,2026-07-01,,report was confusing
+C03,Upwork,2026-06-09,300,1200,80 leads a month,22,,client,2026-07-14,going in-house,
+C04,Referral,2026-06-10,250,1500,40 leads a month,31,28,agency,2026-08-20,budget cut,good client
+C05,Upwork,2026-06-15,150,1000,50 leads a month,,,,2026-06-30,,ghosted after week 2
+C06,Upwork,2026-06-18,200,1000,60 leads a month,14,,client,2026-07-19,found cheaper,
+C07,Upwork,2026-06-22,300,1000,100 leads a month,20,,client,2026-07-21,not what we discussed,
+C08,Upwork,2026-06-25,150,600,40 leads a month,6,,agency,2026-07-24,,
+C09,Referral,2026-07-01,300,2000,50 leads a month,44,39,client,2026-09-02,project over,seasonal business
+C10,Upwork,2026-07-03,200,1000,60 leads a month,11,,client,2026-08-01,no results,
+C11,Upwork,2026-07-08,150,1000,60 leads a month,,,,2026-07-22,,never replied to onboarding form
+C12,Upwork,2026-07-15,250,1000,70 leads a month,19,,client,2026-08-16,too slow to respond,

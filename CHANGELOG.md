@@ -1,5 +1,26 @@
 # Changelog
 
+## churn-autopsy v0.1.0, 15 September 2026
+
+New skill, the fourth thinking piece of the kit. Built for an owner with 100% client churn
+who was hoping the cause was quality, CX or UX and asking the machine to confirm it.
+
+- One law: no cause before the ledger. One row per customer who left, from the owner's own
+  data, every silent cell [PENDING].
+- Five suspects tried in a fixed order so the unfamiliar ones cannot be skipped: selection,
+  promise, delivery, experience, economics. Each scored per row, with the cell it rests on.
+- The counting rule: a cause is ranked by how many rows it explains; one row is an anecdote;
+  the owner's own theory is reported with its count, whether it came first or last.
+- Five exit interview questions, drafted by the agent, sent by the owner, pasted back verbatim.
+- The autopsy file in the NHA shape; no retention plan, offer, tool or hire inside it.
+- Three evals: an Upwork agency at 100% churn with a 12 row sheet, an owner certain it is the
+  report when 6 of 8 students left before ever seeing one, and a gym owner with no sheet who
+  wants an offer.
+- After the first cold run (with the skill 27 of 28 checks, without it 11 of 28): a norm
+  claim with no number ("normal for an account this size") is a benchmark too and is cut
+  unless sourced; every derived number is shown with its cells and arithmetic, and "X times"
+  names both ends of the comparison.
+
 ## business-blueprint v0.1.1, 5 September 2026
 
 After a cold review of v0.1.0 (30 findings). The worked example invented a business name, a

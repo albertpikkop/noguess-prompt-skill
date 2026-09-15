@@ -1,0 +1,62 @@
+{
+  "skill_name": "churn-autopsy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our 90 day problem statement and our client data sheet are attached. Every client we signed in the last 90 days has left, 100% churn. 80% of the business comes from Upwork, clients spend around 1000 USD a month on ads, our management fee is 150 to 300 USD, we are a team of three. We cannot figure out the root cause. We think it is quality, or the client experience, or our reporting dashboard. Analyse the data and tell me the root cause of our churn.",
+      "expected_output": "A ledger of all 12 clients built from the CSV with [PENDING] where the sheet is blank, the five suspects scored against the rows with counts, causes ranked by how many rows each explains, the owner's quality and dashboard theories reported with their counts, exit interview questions for the rows with no stated reason, one experiment for the top cause with a 30 day measure, and no retention plan, tool, hire or unsourced benchmark.",
+      "files": [
+        "evals/files/upwork-agency-clients.csv",
+        "evals/files/upwork-agency-problem-statement.md"
+      ],
+      "expectations": [
+        "The output contains a ledger with exactly 12 client rows, one per row of the CSV, with C01 through C12 all present",
+        "Cells that are blank in the CSV (for example C05 and C11 leads at day 30, and the stated reasons of C02, C05, C08 and C11) appear as [PENDING] in the ledger and are not filled with a guess",
+        "All five suspects (selection, promise, delivery, experience, economics) are scored, each with a count of how many of the 12 rows it explains",
+        "No root cause is stated before the ledger appears in the output",
+        "The owner's own theories (quality, client experience, reporting dashboard) are each reported with a count of rows they explain",
+        "Every ranked cause cites the rows or the count of rows it rests on",
+        "The output contains no industry benchmark or average without a named source",
+        "The output recommends no tool, agency, hire, pricing change or retention plan",
+        "Exactly one experiment is proposed, for the top ranked cause, with one number to measure within 30 days",
+        "Exit interview questions are provided for the rows whose stated reason is blank",
+        "Days from start to stopped are computed for rows that have both dates, and the output notes where most clients left in time"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I run a coaching institute. Students keep leaving in the first two months. It is definitely our progress report, everyone says the report is confusing and the new dashboard is hard to read. The student list is attached. Write me the plan to fix the report and the dashboard so we stop losing them, and a message to win back the ones who left.",
+      "expected_output": "The skill does not write the dashboard plan or the win-back message first. It builds a ledger of the 8 students, computes days from joined to stopped, shows that 6 of the 8 stopped before the first progress report was ever sent, reports the owner's theory with its count (2 of 8 name the report), ranks the suspects as far as the data goes, marks the 4 blank reasons [PENDING] with exit interview questions, and proposes one experiment. Any win-back message is deferred until the cause is known.",
+      "files": [
+        "evals/files/coaching-institute-students.csv"
+      ],
+      "expectations": [
+        "The output does not contain a plan to redesign the report or the dashboard",
+        "The output does not contain a win-back message ready to send",
+        "The ledger contains all 8 students",
+        "The output states how many of the 8 students stopped before their first progress report was sent (the correct count is 6: Aman, Chetan, Deepa, Farhan, Gurleen, Harsh)",
+        "The owner's theory (the report or dashboard) is reported with the count of rows that support it (2 of 8 in their own words)",
+        "The 4 students with a blank stated reason (Aman, Deepa, Gurleen, Harsh) are marked [PENDING] and not assigned a reason",
+        "Exit interview questions are provided for the students with a blank reason",
+        "The output proposes one experiment with one number to measure, not a list of fixes",
+        "The output does not invent a student quote, a number or an industry average"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "my gym members dont renew after the first 3 months, maybe 40% renew i think, i dont have it in a sheet its all in the front desk register and my whatsapp. what should i do, give me a retention offer that works",
+      "expected_output": "With no data, the skill does not invent a cause or an offer. It defines what 'left' means for a gym in the owner's terms as a question or [PENDING], names the few columns to pull from the register and WhatsApp (member, joined, plan, last visit, renewal date, renewed yes or no), gives the five exit interview questions to send on WhatsApp, keeps the 40% as the owner's own estimate, asks at most three questions, and defers the retention offer until the ledger exists, with one line on why.",
+      "files": [],
+      "expectations": [
+        "The output does not propose a specific retention offer, discount or campaign",
+        "The output asks for or defines what counts as a member who left (the churn definition) before any analysis",
+        "The output names the columns to pull from the front desk register and WhatsApp so a ledger can be built",
+        "The output gives exit interview questions (five or fewer) to send on WhatsApp",
+        "The output asks the owner at most three questions",
+        "The 40% figure is kept as the owner's own estimate and no other renewal or churn percentage is introduced",
+        "The output does not invent a cause of the churn",
+        "The output explains in one or two lines why the offer waits for the ledger, without refusing to help"
+      ]
+    }
+  ]
+}

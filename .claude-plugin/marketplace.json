@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ashishpunj",
-  "description": "Skills by Ashish Punj: the student kit. noguess (the TCE + NHA method), business-blueprint (the plan, in three versions), build-first-crm (a first CRM from a business truth), remotion-ffmpeg-video (a first video). One marketplace, four installs.",
+  "description": "Skills by Ashish Punj: the student kit. noguess (the TCE + NHA method), business-blueprint (the plan, in three versions), churn-autopsy (why customers leave, counted before it is fixed), build-first-crm (a first CRM from a business truth), remotion-ffmpeg-video (a first video). One marketplace, five installs.",
   "owner": {
     "name": "Ashish Punj",
     "url": "https://ashishpunj.com"
@@ -26,6 +26,17 @@
         "url": "https://ashishpunj.com"
       },
       "source": "./plugins/business-blueprint",
+      "category": "productivity",
+      "homepage": "https://github.com/albertpikkop/noguess-prompt-skill"
+    },
+    {
+      "name": "churn-autopsy",
+      "description": "Find why customers leave before deciding how to keep them: a ledger of every customer who left, five suspects scored against it, causes ranked by how many customers each one explains. No cause before the ledger, no fix before the cause.",
+      "author": {
+        "name": "Ashish Punj",
+        "url": "https://ashishpunj.com"
+      },
+      "source": "./plugins/churn-autopsy",
       "category": "productivity",
       "homepage": "https://github.com/albertpikkop/noguess-prompt-skill"
     },

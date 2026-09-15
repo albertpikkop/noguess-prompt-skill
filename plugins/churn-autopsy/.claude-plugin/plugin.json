@@ -1,0 +1,22 @@
+{
+  "name": "churn-autopsy",
+  "version": "0.1.0",
+  "description": "Find why customers leave before deciding how to keep them. A ledger of every customer who left, built from the owner's own data; five suspects scored against it; causes ranked by how many customers each one explains. No cause before the ledger, no fix before the cause, nothing invented.",
+  "author": {
+    "name": "Ashish Punj",
+    "url": "https://ashishpunj.com"
+  },
+  "homepage": "https://github.com/albertpikkop/noguess-prompt-skill",
+  "license": "MIT",
+  "keywords": [
+    "churn",
+    "retention",
+    "root-cause",
+    "customer-analysis",
+    "noguess",
+    "nha",
+    "agent-skills",
+    "claude-code",
+    "codex"
+  ]
+}
