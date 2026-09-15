@@ -1,8 +1,9 @@
 # Day one: setting up a student's machine
 
-Four skills, one method. `noguess` (the TCE + NHA method), `business-blueprint` (the plan in
-three versions), `build-first-crm` (a first CRM from the business truth),
-`remotion-ffmpeg-video` (a first video). Do these steps once, in order.
+Five skills, one method. `noguess` (the TCE + NHA method), `business-blueprint` (the plan in
+three versions), `churn-autopsy` (why customers leave, counted before it is fixed),
+`build-first-crm` (a first CRM from the business truth), `remotion-ffmpeg-video` (a first
+video). Do these steps once, in order.
 
 ## Everyone
 
@@ -35,6 +36,10 @@ claude plugin install noguess@ashishpunj
 
 ```bash
 claude plugin install business-blueprint@ashishpunj
+```
+
+```bash
+claude plugin install churn-autopsy@ashishpunj
 ```
 
 ```bash
