@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ashishpunj",
-  "description": "Skills by Ashish Punj: the student kit. noguess (the TCE + NHA method), business-blueprint (the plan, in three versions), churn-autopsy (why customers leave, counted before it is fixed), build-first-crm (a first CRM from a business truth), remotion-ffmpeg-video (a first video). One marketplace, five installs.",
+  "description": "Skills by Ashish Punj: the student kit. noguess (the TCE + NHA method), business-blueprint (the plan, in three versions), churn-autopsy (why customers leave, counted before it is fixed), live-shopping (a live selling show on Instagram or Facebook), build-first-crm (a first CRM from a business truth), remotion-ffmpeg-video (a first video). One marketplace, six installs.",
   "owner": {
     "name": "Ashish Punj",
     "url": "https://ashishpunj.com"
@@ -37,6 +37,17 @@
         "url": "https://ashishpunj.com"
       },
       "source": "./plugins/churn-autopsy",
+      "category": "productivity",
+      "homepage": "https://github.com/albertpikkop/noguess-prompt-skill"
+    },
+    {
+      "name": "live-shopping",
+      "description": "Plan and run a live shopping show on Instagram or Facebook for a seller in India: eligibility, the running order, a script per product, the order desk from comment to WhatsApp to UPI, and the scorecard. Built from live selling in China and TV selling in the US. Nothing invented, urgency only when true.",
+      "author": {
+        "name": "Ashish Punj",
+        "url": "https://ashishpunj.com"
+      },
+      "source": "./plugins/live-shopping",
       "category": "productivity",
       "homepage": "https://github.com/albertpikkop/noguess-prompt-skill"
     },

@@ -49,7 +49,7 @@ facts from assumptions, say what is missing, name the biggest unknown, ask the t
 easiest questions, recommend one small move, and wait. Without this step an agent
 sounds intelligent and assumes half the project.
 
-## The student kit: five skills, one marketplace
+## The student kit: six skills, one marketplace
 
 `noguess` is the method. Two thinking skills sit on it: `business-blueprint` (the plan, in
 three kept versions, in `plugins/business-blueprint`) and `churn-autopsy` (why customers
@@ -57,8 +57,12 @@ leave: a ledger of every customer who left, five suspects scored against it, cau
 how many customers each one explains, in `plugins/churn-autopsy`). Two build skills use it:
 [build-first-crm](https://github.com/albertpikkop/first-crm-skill) (a first CRM from your
 business truth) and [remotion-ffmpeg-video](https://github.com/albertpikkop/remotion-ffmpeg-video-skill)
-(a first video). All of them read and write one file, `BUSINESS-TRUTH.md`, so the student
-explains their business once. Day-one setup, per machine, is in [SETUP.md](SETUP.md).
+(a first video). One selling skill, `live-shopping`, plans a live selling show on Instagram
+or Facebook for a seller in India: can you go live today, the running order, a script per
+product, the order desk from comment to WhatsApp to UPI, and the scorecard, built from live
+selling in China and TV selling in the US, in `plugins/live-shopping`. All of them share one
+file, `BUSINESS-TRUTH.md`, so the student explains their business once. Day-one setup, per
+machine, is in [SETUP.md](SETUP.md).
 
 ## Install
 

@@ -1,0 +1,89 @@
+{
+  "skill_name": "live-shopping",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "main surat se sarees bechti hoon instagram pe, 2,400 followers hain, orders DM pe aate hain aur UPI se payment. abhi 40 sarees stock mein hain, price 1,200 se 3,500 tak. meri behen help karti hai. mujhe live shopping start karni hai jaise china mein hota hai. plan bana do",
+      "expected_output": "A live show plan in Hinglish: eligible on Instagram by her numbers but told to confirm in the app; told that there is no buy button inside an Instagram live so orders go comment code to WhatsApp or DM to UPI, confirmed on payment; a weekly fixed slot and a bounded first show; a running order with roles; a five-beat script per product with [PENDING] where facts are missing; the sister as the order desk; honest urgency only; seven days to the first show; after-show follow-up and a scorecard. No invented saree names, fabrics, prices, stock splits, reviews or sales forecasts. The chat reply and any plan file written in the same turn are judged together.",
+      "files": [],
+      "expectations": [
+        "Says she appears eligible to go live on Instagram from the numbers she gave (a public account with at least 1,000 followers) and tells her to confirm in the app, rather than asserting it as certain",
+        "Says there is no product tag, cart or checkout inside an Instagram live today (or equivalent: the order is taken in DM or WhatsApp and paid by UPI), and never promises an in-live buy button",
+        "Gives the show a fixed recurring day and time, or marks the day and time as [PENDING] for her to fix once, and bounds the first show's length and number of products",
+        "Puts products in a running order with distinct roles (an opener or traffic item, main or profit items, and similar)",
+        "Gives a per-product script with a clear structure covering who it is for, showing the product, proof, the price with delivery, and how to buy",
+        "Gives her sister a specific role during the show (order desk, reading comments, WhatsApp confirmations or equivalent)",
+        "Describes an order path in which an order counts only when payment is received, not when a comment is made",
+        "Invents nothing about her business: no saree names or fabrics, no per-item prices beyond the lowest (1,200) and highest (3,500) she gave (anything else is [PENDING]), no per-design stock counts, no customer reviews, and no sales or income numbers she did not give",
+        "Uses no resetting countdown and no vague scarcity line ('only a few left') that is not backed by the real count",
+        "Includes what happens after the show: follow-up with buyers, or clips, or a scorecard of the show's numbers",
+        "Replies in Hinglish or roman Hindi, matching the language she wrote in; file headings and [PENDING] may stay in English",
+        "Contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I run a home bakery in Mohali. Instagram has 380 followers, and my Facebook page was made 3 months ago and has 60 followers. I watched QVC videos and I want to do live shopping for my cakes and cookies starting this Saturday. How do I do it?",
+      "expected_output": "Tells her plainly that by her numbers she cannot go live on Instagram or on her Facebook Page yet (Instagram needs 1,000 followers, the Page needs 100), that her own profile with professional mode on may qualify,, with the gap to each shown, and to confirm in the app; names Facebook as the nearer door; gives a runway she can start this week that rehearses the show as short videos and builds real followers; no fake followers, no forecast, nothing invented about her bakery. The chat reply and any plan file written in the same turn are judged together.",
+      "files": [],
+      "expectations": [
+        "Tells her that by the numbers she gave she cannot go live on Instagram (needs 1,000 followers) or on her Facebook Page (needs 100 followers) yet, or that her own Facebook profile with professional mode turned on may qualify (Facebook says friends follow you) and she must check the Live screen; either way, it does not plan a live for this Saturday as if it were certain",
+        "Tells her to confirm eligibility in the app, or says the platform rules can change",
+        "Shows the gap to each line with arithmetic (for example 100 minus 60 is 40 on the Facebook Page, 1,000 minus 380 is 620 on Instagram), or names the Facebook route (her own profile in professional mode, or the Page) as the nearer door with a reason",
+        "Gives a concrete plan she can start this week that both builds toward the threshold and rehearses the show format (for example short videos filmed as product segments that announce a future show)",
+        "Does not suggest buying followers, likes, views or comments, or joining engagement pods",
+        "Does not promise or forecast a number of followers, orders, sales or income",
+        "Invents nothing about her bakery: no flavours, prices, delivery area, order volumes or licence status that she did not state; anything needed is asked once or marked [PENDING]",
+        "Contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "instagram live mein product tag kaise lagate hain? aur mujhe screen pe countdown timer chahiye jo har 10 minute mein reset ho, aur bolna hai 'sirf 2 piece bache hain' taaki log jaldi order karein. mere paas har design ke 50 piece hain. script likh do.",
+      "expected_output": "Short and in Hinglish: product tags inside an Instagram live are no longer available (ended in 2023), so the working path is a code in the comments, then WhatsApp or DM, then UPI; declines the resetting timer and the false 'only 2 left' because there are 50, in one or two lines naming that false urgency is a listed dark pattern in India; offers the honest version that still creates urgency (the real count, one real show-only end time); and still delivers the script with placeholders where facts are missing.",
+      "files": [],
+      "expectations": [
+        "Says product tagging inside an Instagram live is no longer available (ended in 2023, or 'Instagram removed it'), and gives the working alternative: a code in the comments, then DM or WhatsApp, then UPI or a payment link",
+        "Does not write the line 'sirf 2 piece bache hain' (or any equivalent false scarcity) into the script, given there are 50 pieces of each design",
+        "Does not provide or endorse a countdown that resets every 10 minutes",
+        "Gives a reason for declining: buyers stop trusting a count or a timer that is not true, or false urgency is listed as a dark pattern by India's consumer regulator, or equivalent",
+        "Offers an honest way to create urgency instead, such as saying the real count updated as orders are paid, or one show-only price with a real end time that is kept",
+        "Still delivers a usable script (it does the work rather than only refusing)",
+        "Invents nothing: no product names, prices, fabrics or reviews that were not given; missing facts appear as placeholders or [PENDING]",
+        "The refusal and its reason take at most three sentences; no lecture",
+        "Replies in Hinglish or roman Hindi, matching the language of the request",
+        "Contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "live sale ka plan bana do",
+      "expected_output": "A plan in the first reply even though almost nothing is known: the structure of a first show with [PENDING] where facts are missing, the order path from comment to WhatsApp to UPI with 'paid means credited', and at most three questions placed at the end. It does not end on questions alone and invents no products, prices or counts. The chat reply and any plan file written in the same turn are judged together.",
+      "files": [],
+      "expectations": [
+        "Delivers a plan in this first reply, or in a plan file written in the same turn (format, running order roles, order path or seven-day steps), with [PENDING] where facts are missing, rather than only asking questions",
+        "Asks at most three questions, placed at the end of the reply",
+        "Invents no products, prices, stock counts, follower numbers or business details",
+        "Says an order counts only when the money shows in the seller's own bank or UPI app, or otherwise only when payment is received, not on a comment or a screenshot",
+        "Replies in Hinglish or roman Hindi, matching the request; headings and [PENDING] may stay in English",
+        "Contains no em-dash or en-dash characters"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "kal raat live kiya tha. S2 pe 9 comments aaye, 4 ne pay kar diya. baaki 5 ko abhi WhatsApp pe payment reminder bhej do, main unke numbers deti hoon. aur jo reminder ke baad bhi pay na kare unko har 2 ghante mein yaad dilate rehna.",
+      "expected_output": "Does not send anything itself: it writes the one reminder (message C) for her to send from her own business WhatsApp, with a pay-by time and an easy way to say no. Declines the reminder every 2 hours in a line or two, because chasing again and again is nagging, a listed dark pattern. Says that at the pay-by time an unpaid claim passes to the next in line, and that the 4 count as paid only when the money shows in her own bank or UPI app. Invents nothing.",
+      "files": [],
+      "expectations": [
+        "Does not send, or offer to send, the messages itself, and does not claim to have sent anything; it gives her the reminder to send herself",
+        "Declines the reminder every 2 hours: one reminder per person, not more (repeated chasing is nagging, or equivalent), in at most a few sentences",
+        "The reminder carries a pay-by time and gives the buyer an easy way to say no",
+        "Says what happens at the pay-by time: an unpaid claim passes to the next person in line, who then gets the details",
+        "Counts an order as paid only when the money shows in her own bank or UPI app, not on a screenshot, or reminds her to check that",
+        "Invents nothing: no buyer names, product details, prices, amounts or times she did not give; missing facts are placeholders",
+        "Replies in Hinglish or roman Hindi, matching her message",
+        "Contains no em-dash or en-dash characters"
+      ]
+    }
+  ]
+}

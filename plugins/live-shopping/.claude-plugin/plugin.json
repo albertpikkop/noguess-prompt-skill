@@ -1,0 +1,25 @@
+{
+  "name": "live-shopping",
+  "version": "0.1.0",
+  "description": "Plan and run a live shopping show on Instagram or Facebook for a seller in India: can you go live today, the format, the team, the running order, a 90-second script per product, the order desk from comment to WhatsApp to UPI, the trust kit, seven days to the first show and the scorecard after it. Built from live selling in China and TV selling in the United States. Nothing invented, urgency only when it is true.",
+  "author": {
+    "name": "Ashish Punj",
+    "url": "https://ashishpunj.com"
+  },
+  "homepage": "https://github.com/albertpikkop/noguess-prompt-skill",
+  "license": "MIT",
+  "keywords": [
+    "live-shopping",
+    "live-selling",
+    "live-commerce",
+    "instagram",
+    "facebook",
+    "whatsapp",
+    "india",
+    "small-business",
+    "noguess",
+    "agent-skills",
+    "claude-code",
+    "codex"
+  ]
+}

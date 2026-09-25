@@ -1,5 +1,40 @@
 # Changelog
 
+## live-shopping v0.1.0, 25 September 2026
+
+New skill, the kit's first selling skill. For a seller in India who wants to sell live on
+Instagram or Facebook, learning from live selling in China and TV selling in the US.
+
+- Can you go live today: Instagram needs a public account and 1,000 followers; Facebook, a
+  Page or a profile with professional mode on, 100 followers and an account at least 60
+  days old. The Live screen in the app is the final word, read without pressing Go Live.
+  Not eligible yet: a runway of short videos, and no go-live date until the app says yes.
+- Shopping inside a live has ended on both platforms, so the plan joins three things by
+  hand: the show, the order on WhatsApp, payment by UPI. Paid means the money shows in the
+  seller's own bank or UPI app; a screenshot is not payment.
+- The running order from a Chinese operator guide: the opener and the bestseller first,
+  profit items and an optional anchor for a bigger show, and a closer. A 90-second script
+  per product in five beats.
+- The order desk: a code in the comments, first comment first chance, the details with a
+  pay-by time, one reminder and never a second, then the next in line.
+- Honest urgency only, read from India's 2023 dark patterns guidelines as a law firm
+  summarises them: the real count, and at most one show-only price with a real end time.
+  Videos that stay up after the show carry no count and no show price.
+- The trust kit, seven days to the first show, and a five-number scorecard after it.
+- Five evals: a Surat saree seller, a Mohali bakery below both follower lines, a seller who
+  wants a resetting timer and "sirf 2 piece bache hain" with 50 in stock, a one-line ask,
+  and a seller who wants the agent to send payment reminders and chase every two hours.
+- Blind run, one grader per answer, not told which answer had the skill: with the skill 44
+  of 44 checks, without it 30 of 44. Without it: no eligibility check for the saree seller
+  and an invented saree, fabric and price; a forecast of 5 to 15 viewers for the bakery; a
+  resetting timer kept as "rounds"; four questions for the one-line ask; a screenshot taken
+  as payment and a second reminder planned. One of the 14 misses is the [PENDING] label
+  itself, which only the skill asks for. The answers came from the skill as it stood at
+  its third review. Fixed after it: recorded videos and the replay carry no count and no
+  show price, advice lines are labelled, the UPI PIN joins the trust kit, a two-hour
+  pay-by window with the one reminder 30 minutes before it, and a tighter checklist in
+  which no mistake counts twice.
+
 ## churn-autopsy v0.1.0, 15 September 2026
 
 New skill, the fourth thinking piece of the kit. Built for an owner with 100% client churn

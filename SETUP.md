@@ -1,7 +1,8 @@
 # Day one: setting up a student's machine
 
-Five skills, one method. `noguess` (the TCE + NHA method), `business-blueprint` (the plan in
+Six skills, one method. `noguess` (the TCE + NHA method), `business-blueprint` (the plan in
 three versions), `churn-autopsy` (why customers leave, counted before it is fixed),
+`live-shopping` (a live selling show on Instagram or Facebook, from comment to UPI),
 `build-first-crm` (a first CRM from the business truth), `remotion-ffmpeg-video` (a first
 video). Do these steps once, in order.
 
@@ -16,7 +17,7 @@ video). Do these steps once, in order.
 4. **A free static host account**, Cloudflare Pages is fine (pages.cloudflare.com), for the
    page the CRM skill builds. Codex students who enable Sites can skip this.
 5. **One folder for the business.** Make it, open the agent inside it, and keep using it.
-   `BUSINESS-TRUTH.md`, the file all three skills share, lives there.
+   `BUSINESS-TRUTH.md`, the one file the skills share, lives there.
 6. **Optional, for the two emails on each enquiry**: a free Resend account (resend.com). To
    email your customers rather than only yourself, you also need a domain you own and verify
    in Resend; until then the skill sends only the operator email and says so.
@@ -43,6 +44,10 @@ claude plugin install churn-autopsy@ashishpunj
 ```
 
 ```bash
+claude plugin install live-shopping@ashishpunj
+```
+
+```bash
 claude plugin install build-first-crm@ashishpunj
 ```
 
@@ -62,7 +67,7 @@ it is missing.
    a student can skip Sites entirely. If you want Sites, enable it in Codex's plugin settings
    (the menu differs by version). Either way, install the Supabase plugin in Codex and sign
    in to your Supabase account when it asks.
-2. Install the three skills. Either one command per skill:
+2. Install the skills. Either one command per repository (the first one brings the whole kit):
 
 ```bash
 npx skills add albertpikkop/noguess-prompt-skill
@@ -76,9 +81,11 @@ npx skills add albertpikkop/first-crm-skill
 npx skills add albertpikkop/remotion-ffmpeg-video-skill
 ```
 
-   or by hand: download each repo and copy its `skills/<name>` folder into `~/.codex/skills/`
-   on Mac, or `%USERPROFILE%\.codex\skills\` on Windows. For `noguess` copy both `noguess`
-   and `tce` (the `/tce` command). On a machine that has both Claude Code and Codex, use the
+   or by hand: download each repo and copy each skill folder into `~/.codex/skills/` on Mac,
+   or `%USERPROFILE%\.codex\skills\` on Windows. In this kit's repo a skill folder is
+   `plugins/<name>/skills/<name>`, for example `plugins/live-shopping/skills/live-shopping`;
+   in the other two it is `skills/<name>`. For `noguess` copy both `noguess` and `tce` (the
+   `/tce` command, in `plugins/noguess/skills/tce`). On a machine that has both Claude Code and Codex, use the
    by-hand copy for Codex, so the skills cannot land in the wrong agent. Restart Codex; it
    lists the skills on its next start.
 
