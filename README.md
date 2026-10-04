@@ -6,10 +6,7 @@ prompt with three parts, Task, Context, Expectations, and marks every gap `[PEND
 instead of letting the AI guess. Then it checks the answer against the prompt that
 produced it.
 
-This is the loop one person used to build a WhatsApp CRM ([app.growtricity.com](https://app.growtricity.com))
-and the lead funnel at [growtricity.com](https://growtricity.com) with no team, and it is
-the spine of the twelve-class course taught in Chandigarh. TCE opens the loop with
-structured input. NHA (notes, facts, files) closes it with verified output.
+TCE opens the loop with structured input. NHA (notes, facts, files) closes it with verified output.
 
 Free tool version, no login: [Prompt Claro](https://www.ashishpunj.com/nha-tce/en/en.html).
 
