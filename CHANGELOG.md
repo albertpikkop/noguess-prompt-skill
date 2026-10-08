@@ -1,5 +1,20 @@
 # Changelog
 
+## business-blueprint v0.2.0, 8 October 2026
+
+The ten questions, reworded for the two people who answer them. Students with a salary
+stalled on "price", "capacity" and "who is it for"; the words assumed a shop.
+
+- The ten questions carry an example line for both profiles, and "business or job?" is
+  asked in the same message, never as a turn of its own. The lines are shapes, never
+  answers; the agent fills none in.
+- Question 6 is now "What is it worth, and to whom?": a price for an owner, hours saved or
+  a raise or side income for an employee, and "not sure yet" stays [PENDING] by design.
+- Question 7 is "How much can I take on?", with the job's own limits (company data, tools,
+  clients) written down as facts. Question 10 keeps "biggest unknown or decision" and adds
+  the test: the one that, if wrong, makes the rest pointless.
+- Plan file headings are unchanged, so existing PLAN files still match.
+
 ## live-shopping v0.1.0, 25 September 2026
 
 New skill, the kit's first selling skill. For a seller in India who wants to sell live on

@@ -113,7 +113,8 @@ will be called `PLAN-v0.md`, and all of it counts. Before asking anything:
 2. If two sources disagree, ask which one is current. That is the only question allowed
    before reading.
 3. Map what you found onto the ten questions. For each: answered with a fact, answered
-   with a guess, or missing. Keep their words.
+   with a guess, or missing. Keep their words. If the plan describes a job rather than a
+   business, read questions 6 and 7 through the job lens in Stage 1.
 
 Then judge it, do not route it. **The question is whether it is good enough to move,
 not which file is missing.**
@@ -137,24 +138,42 @@ Never run the ten questions on a person who has already answered them somewhere.
 
 ## Stage 1: the ten questions
 
-Only if Stage 0 found nothing. Show all ten first, as a list, and let the person answer in their own words, in any
-order, in one message or many. This order matters: a beginner handed a blank prompt box
-writes a wish, not a plan. The questions are the scaffold that makes the answer real.
+Only if Stage 0 found nothing. Show all ten first, as a list, in one message. Two kinds
+of person answer them: **a business owner** (someone starting out counts as one) and **a
+salaried person** planning a side project or a change inside their own work. For the
+second, the words "price", "capacity" and "customer" stop them cold, so each question
+carries one example line for each profile. If the message does not already say which they
+are, ask it in the same message as the ten, never as a turn of its own, and keep both
+example lines until they answer. Let the person answer in their own words, in any order,
+in one message or many. This order matters: a
+beginner handed a blank prompt box writes a wish, not a plan. The questions are the
+scaffold that makes the answer real.
 
 ```text
-1.  What am I trying to improve or create?
-2.  Who is the first real person this is for?
-3.  Where are they, or how will they find me?
-4.  What problem do they already have?
-5.  What is my simple offer, or the next useful outcome?
-6.  What is the rough price, value, or decision at stake?
-7.  What capacity or limit do I have?
-8.  What can I invest, in time or money?
-9.  What evidence do I already have?
-10. What is my biggest unknown or decision?
+1.  What am I trying to change?
+    Business: one thing that goes differently in the shop next month.  Job: one task at work that takes less time, or one side client served.
+2.  Who is the first real person this is for? A name, not a category.
+    Business: one customer you could phone this week.  Job: your manager, one colleague, or one person who would pay you on the side.
+3.  Where do I meet them today, or where would I find them?
+    Business: the shop, WhatsApp, a referral, a search.  Job: your office, the team chat, one person who introduces you.
+4.  What goes wrong for them on a normal day, that I have seen?
+    Business: something you watched happen, with a count if you have one.  Job: the thing your manager or colleague redoes, waits for, or complains about.
+5.  What will they get from me, in one sentence they would say themselves?
+    Business: the thing you deliver next month.  Job: the thing you hand your boss, or the result a side client gets.
+6.  What is it worth, and to whom?
+    Business: the price you charge, and where the number came from.  Job: hours saved a week, or the raise, role or side income it leads to. "Not sure yet" is a real answer.
+7.  How much can I take on?
+    Business: customers a week with today's people.  Job: hours a week outside work, and what company data or tools you may not use.
+8.  What can I put in, and for how long?
+    Hours a week, rupees a month (an AI subscription counts), and how many months before you expect something back.
+9.  What have I already seen or heard that supports this?
+    One conversation, one sale, one message, one count. Who said it and when. Experience is not evidence.
+10. What is my biggest unknown or decision, the one that, if wrong, makes the rest pointless?
+    Business: usually a question about the customer or the money.  Job: usually whether this lives inside the job or outside it, or whether anyone would pay.
 ```
 
-Say one line before them. Answer from memory. Guessing is allowed as long as you say it
+The example lines are shapes, never answers: the agent never fills one in for the person.
+Say one line before the ten. Answer from memory. Guessing is allowed as long as you say it
 is a guess. "I do not know" is a real answer, and it keeps the question open.
 
 Never ask them one at a time as an interrogation. Never add an eleventh question at this
